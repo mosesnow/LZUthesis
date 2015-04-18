@@ -1718,7 +1718,7 @@ Envelope.lyx
 \begin_inset Text
 
 \begin_layout Plain Layout
-书脊.lyx
+spine.lyx
 \end_layout
 
 \end_inset
@@ -2500,7 +2500,7 @@ hoffset}{-0.3 cm}
 \end_layout
 
 \begin_layout Enumerate
-书脊.lyx生成竖排的书脊文字。
+spine.lyx生成竖排的书脊文字。
 \end_layout
 
 \begin_layout Enumerate
