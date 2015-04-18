@@ -1,0 +1,176 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass LZUthesis
+\begin_preamble
+% !Mode:: "TeX:UTF-8"   %%winedt 以utf8编码打开
+% Can only be compiled with xelatex+bibtex
+
+% 设置图形文件的搜索路径
+\graphicspath{{chapter/}{figures/}}
+
+
+%定义书脊中额外字段
+\def\LZU@value@university{兰州大学}
+\newcommand\yearcn[1]{\def\LZU@value@yearcn{#1}}
+
+
+%定义单行完整标题
+\def\LZU@value@fulltitle{\CAST@value@title}
+
+\DeclareOption{longtitle}{
+%定义双行完整标题
+\def\LZU@value@fulltitle{\CAST@value@title\LZU@value@titleadd}
+}
+\ProcessOptions
+
+
+%定义书脊命令
+\newcommand{\shuji}[1][\LZU@value@fulltitle]{
+  %\newpage
+  \thispagestyle{empty}
+  \fangsong\zihao{4}\ziju{0.4}
+  \rotatebox{-90}{\hbox to 23cm {#1 \hspace{1.5cm} \CAST@value@author \hspace{1.5cm} \LZU@value@university
+  \hspace{1.5cm} \LZU@value@yearcn }}
+  }
+\setCJKfamilyfont{zhfs}[RawFeature={vertical:}]{FangSong}
+
+%调整书脊上下位置
+\setlength{\voffset}{-1.65 cm}
+
+%重定义生成封面命令
+\renewcommand\maketitle{%
+ 
+  %生成中文书脊
+  %\shuji
+  %若题目中有英文，用下面这一行生成书脊
+  \shuji[兰州大学研究生学位论文\hspace{0.3em}\raisebox{-5pt}{\LaTeX}\hspace{-0.1em}~模板简介]
+
+  }
+\end_preamble
+\options oneside,longtitle
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding utf8-plain
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 2
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+兰州大学研究生学位论文
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+中文标题
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title-sec
+LaTeX模板简介
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+中文标题第二行，题目较短时删除之，并去除文档类选项 longtitle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+刘海滨
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+作者汉语姓名
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout YearCN
+二零一五
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+中文大写年，如二零一五
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

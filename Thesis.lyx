@@ -1,0 +1,3913 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass LZUthesis
+\begin_preamble
+% !Mode:: "TeX:UTF-8"   %%winedt 以utf8编码打开
+% Can only be compiled with xelatex+bibtex
+
+% 设置图形文件的搜索路径
+\graphicspath{{figures/}}
+
+% 小节标题靠左对齐
+\CTEXsetup[format+={\flushleft}]{section}
+
+% 取消链接的颜色（黑白打印时启用）
+%\hypersetup{colorlinks=false}
+
+%使文档居中，打印时应注释掉
+\evensidemargin 0.93 true cm
+\setlength{\hoffset}{-0.3 cm}
+
+%允许equationarray分页换行
+\allowdisplaybreaks
+\end_preamble
+\options twoside,longtitle
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding utf8-plain
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 2
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Classification
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+分类号；一般不要求学生填写
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout confidential
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+密级；申请保密后需填写
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+兰州大学研究生学位论文
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+中文标题
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title-sec
+LaTeX模板简介
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+中文标题第二行，题目较短时删除之，并去除文档类选项 longtitle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout eTitle
+Introduction to the LaTeX Template of
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+英文标题
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout eTitle-sec
+Lanzhou University Thesis
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+英文题目第二行，题目较短时删除之，并去除文档类选项 longtitle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+刘海滨
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+作者汉语姓名
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Major
+物理学•理论物理
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+专业
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Degree
+博士
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+学位
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout direction
+XXXX
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+研究方向
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout advisor
+某某某
+\begin_inset space ~
+\end_inset
+
+教授
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+导师姓名+职称
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout datebeginAndEnd
+2012年9月至2015年5月
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+论文工作起止年月
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout submitDate
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+论文提交日期
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout defenddate
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+答辩日期
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout degreeDate
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+学位授予日期
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout leftheader
+兰州大学博士学位论文
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+左侧页眉
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+makestatement
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+生成声明页
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+frontmatter
+\backslash
+pagenumbering{Roman}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+前文-罗马页码
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+中文摘要
+\end_layout
+
+\end_inset
+
+本文是兰州大学学位论文的LaTeX
+\begin_inset space ~
+\end_inset
+
+(包含LyX)模板及其使用说明。除了介绍文档类LZUthesis的用法外，本文还是一份简要的学位论文写作指南。
+\end_layout
+
+\begin_layout Keywords
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+中文关键词
+\end_layout
+
+\end_inset
+
+兰州大学，学位论文，LaTeX模板，LyX模板
+\end_layout
+
+\begin_layout Abstract(en)
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+英文摘要
+\end_layout
+
+\end_inset
+
+This paper is a LaTeX (include LyX) thesis template of Lanzhou University.
+ Besides the usage of the LaTeX document class LZUthesis, a brief guideline
+ for writing the thesis is also included.
+\end_layout
+
+\begin_layout Keywords(en)
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+英文关键词
+\end_layout
+
+\end_inset
+
+Lanzhou University, Thesis, LaTeX Template, LyX Template
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+自动生成章节目录以及pdf书签
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+如果需要生成插图目录或表格目录，菜单栏/插入/目录/图像列表||表格列表
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mainmatter
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+正文部分-数字页码
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{lzu}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+正文页眉页脚样式
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+引言
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:intro"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+虽然兰州大学研究生院制定了
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{http://ge.lzu.edu.cn/degree/xwsq/lwgf/201103/1186.htm}{学位论文撰写要求}
+\end_layout
+
+\end_inset
+
+(见附录
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:standard"
+
+\end_inset
+
+)，但只提供了
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{http://ge.lzu.edu.cn/degree/xwsq/lwgf/201103/1187.htm}{~Word模板}
+\end_layout
+
+\end_inset
+
+。广大理科生更加青睐的LaTeX却没有标准模板。
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{http://blog.sciencenet.cn/home.php?mod=space&uid=117412&do=blog&id=512804}{LZU
+thesis~}
+\end_layout
+
+\end_inset
+
+宏包是赵振华以中科院学位论文宏包
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{http://www.ctex.org/PackageCASthesis}{~CASthesis~}
+\end_layout
+
+\end_inset
+
+作为基础模板，根据兰州大学研究生院学位论文撰写要求修改的。作者对LZUthesis宏包进行了进一步修改(主要变更见附录
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:changelog"
+
+\end_inset
+
+)，使之更加符合兰大学位论文的撰写要求，并制作了相应的LyX模板。
+\end_layout
+
+\begin_layout Standard
+宏包底层使用的是XeLaTeX，而不是CJK方案，原因在于：
+\end_layout
+
+\begin_layout Enumerate
+XeLaTeX支持系统字体，对中文友好。
+\end_layout
+
+\begin_layout Enumerate
+XeLaTeX支持unicode，可编译各国文字。
+\end_layout
+
+\begin_layout Enumerate
+XeLaTeX支持常见的图片格式，如：pdf、eps、jpg、png等。
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Standard
+模板使用LyX的优点是所见即所得，比较直观，缺点是TeX中一些复杂功能难以实现。另外LyX可以导出标准的TeX代码(参见第
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:export"
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+节)，方便转入TeX编辑器继续撰写。
+\end_layout
+
+\begin_layout Standard
+青睐TeX模板的用户，直接编辑模板根目录下的Thesis.tex即可。注意它不是Thesis.lyx直接导出的，如果要使用此模板，不要让LyX导出TeX时覆盖此文件
+。
+\end_layout
+
+\begin_layout Chapter
+系统配置
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+LZUthesis
+\family default
+宏包使用了宏包amsmath、amsthm、amsfonts、amssymb、bm、ctex和hyperref。目前大多数的TeX系统中都包含有这些宏包。但是中
+文字体在各个系统中却不尽相同：Windows下使用CTeX套装一般不需要额外配置字体，但Linux和Mac一般情况下需要设定中文字体，中文字体名称可通过命令
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+sudo fc-list :lang=zh-cn
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+查看，具体配置见本章内容。请注意字体设定可能要根据你自己系统的中文字体做相应调整。
+\end_layout
+
+\begin_layout Section
+Windows配置
+\end_layout
+
+\begin_layout Itemize
+安装CTeX套装，最新的版本可以从
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{http://www.ctex.org}{~www.ctex.org}
+\end_layout
+
+\end_inset
+
+ 网站下载。
+\end_layout
+
+\begin_layout Itemize
+安装完成后，把所有宏包升级到最新(开始菜单--CTEX--Update(Admin))。
+\end_layout
+
+\begin_layout Itemize
+安装LyX，最新的LyX安装包可以从
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{http://www.lyx.org/Download}{~www.lyx.org/Download}
+\end_layout
+
+\end_inset
+
+下载。
+\end_layout
+
+\begin_layout Section
+Linux配置
+\end_layout
+
+\begin_layout Standard
+软件安装以ubuntu为例，其他发行版应根据具体情况安装。
+\end_layout
+
+\begin_layout Itemize
+安装texlive以及texlive-lang-cjk。
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "86text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sudo apt-get install texlive texlive-xetex
+\end_layout
+
+\begin_layout Plain Layout
+
+sudo apt-get install texlive-lang-cjk
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+安装LyX。
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "86text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sudo apt-get install lyx
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+中文字体设置
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+文档类选项(文档--首选项--文档类)中添加选项[nofonts]
+\end_layout
+
+\begin_layout Enumerate
+导言区(文档--首选项--LaTeX导言区)中添加
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tiny
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hrule
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setCJKmainfont[BoldFont=文泉驿微米黑,ItalicFont=文泉驿正黑] {文泉驿正黑} 
+\backslash
+setCJKsansfont{文泉驿微米黑}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setCJKmonofont{文泉驿等宽正黑}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setCJKfamilyfont{zhsong}{文泉驿正黑}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setCJKfamilyfont{zhhei}{文泉驿微米黑}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setCJKfamilyfont{zhfs}{文泉驿等宽微米黑}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setCJKfamilyfont{zhkai}{文泉驿等宽正黑}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand*{
+\backslash
+songti}{
+\backslash
+CJKfamily{zhsong}} % 宋体
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand*{
+\backslash
+heiti}{
+\backslash
+CJKfamily{zhhei}}   % 黑体
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand*{
+\backslash
+kaishu}{
+\backslash
+CJKfamily{zhkai}}  % 楷书
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand*{
+\backslash
+fangsong}{
+\backslash
+CJKfamily{zhfs}} % 仿宋
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hrule
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+normalsize
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Mac配置
+\end_layout
+
+\begin_layout Itemize
+安装MacTeX，最新安装文件可以从
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{https://tug.org/mactex/}{~https://tug.org/mactex/}
+\end_layout
+
+\end_inset
+
+ 网站下载。
+\end_layout
+
+\begin_layout Itemize
+安装LyX，最新的LyX安装包可以从
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{http://www.lyx.org/Download}{~www.lyx.org/Download}
+\end_layout
+
+\end_inset
+
+下载。
+\end_layout
+
+\begin_layout Itemize
+中文字体设置
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+文档类选项(文档--首选项--文档类)中添加选项[nofonts]
+\end_layout
+
+\begin_layout Enumerate
+导言区(文档--首选项--LaTeX导言区)中添加
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tiny
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hrule
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setCJKmainfont[BoldFont=Heiti SC Light,ItalicFont=Kaiti SC]   {Songti SC
+ Light}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setCJKsansfont{Heiti SC Light} 
+\backslash
+setCJKmonofont{Songti SC Light}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setCJKfamilyfont{zhsong}{Songti SC Light}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setCJKfamilyfont{zhhei}{Heiti SC Light}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setCJKfamilyfont{zhfs}{STFangsong}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setCJKfamilyfont{zhkai}{Kaiti SC}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand*{
+\backslash
+songti}{
+\backslash
+CJKfamily{zhsong}} % 宋体
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand*{
+\backslash
+heiti}{
+\backslash
+CJKfamily{zhhei}}   % 黑体
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand*{
+\backslash
+kaishu}{
+\backslash
+CJKfamily{zhkai}}  % 楷书
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand*{
+\backslash
+fangsong}{
+\backslash
+CJKfamily{zhfs}} % 仿宋
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hrule
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+normalsize
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Standard
+本节内容未经实测，请实测者予以确认或提出修改意见。
+\end_layout
+
+\begin_layout Chapter
+模版使用
+\end_layout
+
+\begin_layout Section
+模板文件结构
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:files"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+整个模板根目录的文件列表如下：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="14" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LZUthesis.cls
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---LZUthesis宏包
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color magenta
+$
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LZUthesis.cfg
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---LZUthesis宏包配置文件
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color magenta
+$
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LZUthesis.layout
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---LZUthesis的LyX布局文件
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color magenta
+$
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CASmthesis.cls
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---CASthesis宏包
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color magenta
+$
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CASmthesis.cfg
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---CASthesis宏包配置文件
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color magenta
+$
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+lzubib.bst
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---引文样式文件
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color magenta
+$
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bib/thesis.bib
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---bib数据库
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color magenta
+$
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+figures/lzu.eps
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---兰州大学校名标准字
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color magenta
+$
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thesis.lyx
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---LyX模板主文件
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Envelope.lyx
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---A3封面LyX模板
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+书脊.lyx
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---书脊LyX模板
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thesis.tex
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---TeX模板主文件
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color magenta
+$
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Makefile
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---Makefile文件
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+gbt7714-2005.bst
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---符合国标gbt7714-2005的引文样式文件
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+注：
+\color red
+*
+\color inherit
+表示LyX模板必须的文件，
+\color magenta
+$
+\color inherit
+表示LaTeX模板必须的文件。
+\end_layout
+
+\begin_layout Section
+基本设置
+\end_layout
+
+\begin_layout Enumerate
+模版默认使用的文档类选项(文档--首选项--文档类--自定义)是twoside,
+\begin_inset space ~
+\end_inset
+
+longtitle，即双面，长标题。
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+双面：此时页码、页边距以及章开始页等会对奇偶页区别设置，可更改为oneside。
+\end_layout
+
+\begin_layout Enumerate
+长标题：若标题较短时应去除选项longtitle，并删除中英文标题的第二行。
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+图片搜索路径默认设置为模板根目录下的figures/。
+\end_layout
+
+\begin_layout Enumerate
+bib数据库默认设置为模板根目录下的bib/thesis.bib。
+\end_layout
+
+\begin_layout Section
+示例
+\end_layout
+
+\begin_layout Standard
+论文中最常使用的一些功能在本节中给出示例，其他LyX功能的使用详见帮助--用户手册，TeX使用则可参考The TeXbook
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Knut04-T"
+
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Subsection
+公式
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\hat{H}=\frac{\epsilon}{2}\hat{\sigma}_{z}-\frac{\Delta}{2}\hat{\sigma}_{x}+\sum_{k}\omega_{k}\hat{b}_{k}^{\dagger}\hat{b}_{k}+\sum_{k}\frac{g_{k}}{2}\hat{\sigma}_{z}(\hat{b}_{k}+\hat{b}_{k}^{\dagger})\label{eq:sbm}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+表格
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Alpha
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Beta
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gamma
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Delta
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Theta
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\gamma$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\delta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Gamma$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Delta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+希腊字母表
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Greek"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+图形
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/lzu.eps
+	width 61.8text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+兰州大学校名标准字
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:lzu"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+引用
+\end_layout
+
+\begin_layout Subsubsection
+交叉引用
+\end_layout
+
+\begin_layout Standard
+对所有需要引用的公式、表格、图形，执行插入--标签后，即可使用插入--交叉引用自动产生引用。
+\end_layout
+
+\begin_layout Itemize
+哈密顿量见方程
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:sbm"
+
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Itemize
+希腊字母表见表
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Greek"
+
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Itemize
+校名标准字如图
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:lzu"
+
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Subsubsection
+文献引用
+\end_layout
+
+\begin_layout Standard
+将引文的bib数据库(默认文件名为thesis.bib)放入模板根目录下的bib文件夹，即可通过插入--文献引用自动产生引文。
+\end_layout
+
+\begin_layout Itemize
+Journal：An article
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Liu13PRA-A"
+
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Itemize
+Book：CTeX FAQ
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wu05-C"
+
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Subsection
+makefile
+\end_layout
+
+\begin_layout Standard
+makefile仅限LaTeX模板编译使用，适合Linux和Mac用户使用。
+\end_layout
+
+\begin_layout Enumerate
+make：只编译源文件，快速调试用。
+\end_layout
+
+\begin_layout Enumerate
+make ref：包含引用的完整编译。
+\end_layout
+
+\begin_layout Enumerate
+make clean：清除临时文件。
+\end_layout
+
+\begin_layout Section
+注意事项
+\end_layout
+
+\begin_layout Enumerate
+模板目录下的必须文件(见第
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:files"
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+节)注意不要删除。
+\end_layout
+
+\begin_layout Enumerate
+请尽量升级TeX宏包到最新，一些旧包会使排版稍微不正常。截止到
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today 
+\end_layout
+
+\end_inset
+
+，此模板在最新宏包下工作正常。
+\end_layout
+
+\begin_layout Enumerate
+Bibkey中不能有中文字符。
+\end_layout
+
+\begin_layout Enumerate
+LyX中必须用空格时，尽量用~或(插入--格式--强制间距
+\begin_inset space ~
+\end_inset
+
+)代替，不用空格的原因是：LyX不会中文断句，使用空格将使得LyX编辑界面混乱。
+\end_layout
+
+\begin_layout Enumerate
+Hyperref已经在模板中声明过，如果在LyX中执行插入--超链接会造成冲突(直接编辑TeX代码无此问题)，这时只能通过插入TeX代码的方式使用，比如：
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{https://www.google.com}{Google}
+\end_layout
+
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Enumerate
+LyX中，enumerate环境结束后，必须先添加一个分割线环境才能换行，具体参见第
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:intro"
+
+\end_inset
+
+章中列表结束后的蓝色分割线(蓝色分割线仅现于LyX)。
+\end_layout
+
+\begin_layout Section
+论文打印
+\end_layout
+
+\begin_layout Subsection
+文档设置
+\end_layout
+
+\begin_layout Enumerate
+按需选取twoside或者oneside的选项。
+\end_layout
+
+\begin_layout Enumerate
+启用导言区(文档--首选项--LaTeX导言区)的
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hypersetup{colorlinks=false}
+\end_layout
+
+\end_inset
+
+以取消链接的颜色。
+\end_layout
+
+\begin_layout Enumerate
+预留左侧装订线：注释掉导言区中如下两行
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "86text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+evensidemargin 0.93 true cm
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+hoffset}{-0.3 cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+书脊生成
+\end_layout
+
+\begin_layout Enumerate
+书脊.lyx生成竖排的书脊文字。
+\end_layout
+
+\begin_layout Enumerate
+Envelope.lyx生成含书脊的封皮，纸张大小A3+。
+\end_layout
+
+\begin_layout Enumerate
+若中文标题中含有英文，需要将导言区(文档--首选项--LaTeX导言区)中的
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+shuji
+\end_layout
+
+\end_inset
+
+替换为如下样式：
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
+\end_layout
+
+\end_inset
+
+
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+shuji[某
+\backslash
+hspace{0.3em}
+\backslash
+raisebox{-5pt}{English}
+\backslash
+hspace{-0.1em}~某]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+normalsize 
+\end_layout
+
+\end_inset
+
+本文标题中的LaTeX即是如此处理，对于全中文标题的情况可做上面的相反替换。
+\end_layout
+
+\begin_layout Chapter
+进阶功能
+\end_layout
+
+\begin_layout Section
+导出TeX
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:export"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+文件-导出-LaTeX(XeTeX)，可导出为tex文件进行进一步编辑，该tex文件的编译顺序为: XeLaTeX--BibTeX--XeLaTeX--XeLa
+TeX。注意LyX默认会自动将图片转换为pdf格式，造成一些图片有两个版本，不处理也不会有影响。若想处理，建议保留pdf版本的，因为XeLaTeX处理pdf图片
+时，编译速度快；若选择保留其他格式，应在tex文件正文前声明图片的后缀名，比如：
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+DeclareGraphicsExtensions{.pdf,.eps}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+导入Bibitem到正文
+\end_layout
+
+\begin_layout Standard
+如果需要在没有bib文件的情况下也可编译，则首先把导出的tex文件完整编译一次，再将生成的bbl文件内容拷贝到tex正文中替换掉如下两行即可
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "86text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bibliographystyle{lzubib}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+bibliography{bib/thesis}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+修复stemV问题
+\end_layout
+
+\begin_layout Standard
+由于中文字体某些参数设置不当，LaTeX生成的pdf在Adobe阅读器下中文字体(特别是宋体与仿宋)会稍显模糊，可通过修改stemV值改善。
+\end_layout
+
+\begin_layout Enumerate
+下载并安装
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/}
+\end_layout
+
+\begin_layout Plain Layout
+
+{~pdftk free}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+cmd中切换到pdf所在目录，执行
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "86text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+pdftk in.pdf output out.pdf uncompress
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+用文本编辑器编辑out.pdf，查找并修改simsun与fangsong的stemV值为50，保存。
+\end_layout
+
+\begin_layout Enumerate
+执行以下命令，得到final.pdf
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "86text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+pdftk out.pdf output final.pdf compress
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+自动生成成果页
+\end_layout
+
+\begin_layout Enumerate
+此方法仅适用于LaTeX模板。
+\end_layout
+
+\begin_layout Enumerate
+导言中添加：
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "86text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+%%自动生成发表文章目录
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage[resetlabels]{multibib}
+\end_layout
+
+\begin_layout Plain Layout
+
+%把参考文献加入目录中，但排除目录本身
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage[nottoc]{tocbibind}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcites{phd}{在学期间的研究成果}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+在参考文献列表后添加
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "86text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+%%自动生成发表文章目录
+\end_layout
+
+\begin_layout Plain Layout
+
+%此处插入所有发表文章的bibkey
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+nocitephd{Liu13PRA-A}
+\end_layout
+
+\begin_layout Plain Layout
+
+%定义引文样式为lzubib
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+bibliographystylephd{lzubib}
+\end_layout
+
+\begin_layout Plain Layout
+
+%发表文章的bib库
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+bibliographyphd{bib/thesis}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+此种情况使用makefile不能完整编译，但WinEdt可以完整编译。执行顺序为: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+XeLaTeX--BibTeX--XeLaTeX--XeLaTeX。
+\end_layout
+
+\begin_layout Standard
+命令行下手动编译时需要额外执行
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+BibTeX phd.aux
+\end_layout
+
+\end_inset
+
+。
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\start_of_appendix
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+自动生成参考文献列表，需要模板根目录下有：bib/thesis.bib
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "bib/thesis"
+options "lzubib"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+发表文章目录
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{publications}{99}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item Ji-Hong Zhang, 
+\backslash
+textbf{Ling-Yun Wu}, and Xiang-Sun Zhang, 
+\backslash
+textit{Reconstruction of DNA sequencing by hybridization}, 
+\backslash
+href{http://link.aps.org/doi/10.1103/PhysRevA.87.052139}{Bioinformatics, 
+\backslash
+textbf{19}(1): 14-21.} (2013).
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\backslash
+textbf{吴凌云}, 
+\backslash
+href{http://www.ctex.org/CTeXFAQ}{
+\backslash
+textit{CTEX FAQ (常见问题集)}}, (2004).
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{publications}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+致谢
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Thanks
+Ajouter de la vie aux jours lorsqu'on ne peut plus ajouter de jours à la
+ vie.
+\end_layout
+
+\begin_layout Thanks
+\align right
+---Jean Bernard
+\end_layout
+
+\begin_layout Chapter
+主要变更
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:changelog"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+修复目录中摘要和abstract超链接的错误
+\end_layout
+
+\begin_layout Enumerate
+修复长标题在摘要部分只显示第一行
+\end_layout
+
+\begin_layout Enumerate
+修复中英文摘要第一行不缩进
+\end_layout
+
+\begin_layout Enumerate
+修复页眉上不显示完整标题
+\end_layout
+
+\begin_layout Enumerate
+页眉改为双线
+\end_layout
+
+\begin_layout Enumerate
+替换lzu.eps为清晰版本
+\end_layout
+
+\begin_layout Enumerate
+添加lyx模板
+\end_layout
+
+\begin_layout Enumerate
+修正行间距
+\end_layout
+
+\begin_layout Enumerate
+设置Twoside时页码在装订线右侧，oneside时居中
+\end_layout
+
+\begin_layout Enumerate
+调整封面、声明页布局
+\end_layout
+
+\begin_layout Enumerate
+修正章标题为三号字
+\end_layout
+
+\begin_layout Enumerate
+改变图表的编号格式为2-1
+\end_layout
+
+\begin_layout Enumerate
+修正致谢页的字体及行距
+\end_layout
+
+\begin_layout Enumerate
+修正一些中文字段，如摘要、Key words、在学期间的研究成果等
+\end_layout
+
+\begin_layout Enumerate
+修改小节标题为不缩进
+\end_layout
+
+\begin_layout Enumerate
+添加A3封面，书脊
+\end_layout
+
+\begin_layout Enumerate
+修改bst样式文件
+\end_layout
+
+\begin_layout Enumerate
+调小装订线距离为0.6cm
+\end_layout
+
+\begin_layout Enumerate
+致谢、成果偶数页留白
+\end_layout
+
+\begin_layout Enumerate
+单独定义makestatement
+\end_layout
+
+\begin_layout Enumerate
+合并cls文件，longtitle作为类选项进入
+\end_layout
+
+\begin_layout Enumerate
+更改各处全标题的调用
+\end_layout
+
+\begin_layout Enumerate
+成果页格式调整为与参考文献相同
+\end_layout
+
+\begin_layout Enumerate
+摘要重定义为chapter，间距微调
+\end_layout
+
+\begin_layout Enumerate
+chapter标题上下间距微调 
+\end_layout
+
+\begin_layout Enumerate
+去除摘要、Abstract、目录的页眉
+\end_layout
+
+\begin_layout Chapter
+兰州大学研究生学位论文写作规范
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+论文写作规范
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:standard"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+研究生学位论文是研究生科学研究工作的全面总结，是描述其研究成果、代表其研究水平的重要学术文献资料，是申请和授予相应学位的基本依据。为规范我校研究生学位论文编写格
+式，根据《科学技术报告、学位论文和学术论文的编写格式》（GB/T
+\begin_inset space ~
+\end_inset
+
+7713-1987）和《学位论文编写规则》（GB/T
+\begin_inset space ~
+\end_inset
+
+7713.1-2006)等国家标准，制定本研究生学位论文写作规范。
+\end_layout
+
+\begin_layout Section
+学位论文基本要求
+\end_layout
+
+\begin_layout Standard
+硕士学位论文，要求对所研究的课题有新见解或新成果，并对本学科发展或经济建设、社会进步有一定意义，表明作者掌握坚实的基础理论和系统的学科知识，具有从事学术研究或担
+负专门技术工作的能力。学位论文应在导师指导下，由硕士研究生本人独立完成。
+\end_layout
+
+\begin_layout Standard
+博士学位论文，要求对所研究的课题在材料、角度、观点、方法、理论等方面或某方面有创新性成果，并对学术发展、经济建设和社会进步有较重要的意义，表明作者掌握坚实宽广的
+基础理论和系统深入的学科知识，具有独立从事学术研究的能力。学位论文应在导师指导下，由博士研究生本人独立完成。
+\end_layout
+
+\begin_layout Standard
+学位论文应当用规范汉字进行撰写，除古汉语研究中涉及的古文字和参考文献中引用的外文文献之外，均采用简体中文撰写。
+\end_layout
+
+\begin_layout Standard
+学位论文必须是一篇系统完整的、有创造性的学术论文。
+\end_layout
+
+\begin_layout Standard
+博士学位论文一般在5万字左右，硕士学位论文一般在3万字左右。
+\end_layout
+
+\begin_layout Section
+学位论文基本结构
+\end_layout
+
+\begin_layout Standard
+学位论文基本结构包括前置部分、主体部分和结尾部分。
+\end_layout
+
+\begin_layout Subsection
+前置部分
+\end_layout
+
+\begin_layout Enumerate
+封面（包括扉页）
+\end_layout
+
+\begin_layout Enumerate
+独创性声明
+\end_layout
+
+\begin_layout Enumerate
+关于学位论文使用授权的申明
+\end_layout
+
+\begin_layout Enumerate
+摘要页（包括中英文摘要）
+\end_layout
+
+\begin_layout Enumerate
+目录页
+\end_layout
+
+\begin_layout Enumerate
+插图和附表清单（可根据需要）
+\end_layout
+
+\begin_layout Subsection
+主体部分
+\end_layout
+
+\begin_layout Enumerate
+引言（或绪论）
+\end_layout
+
+\begin_layout Enumerate
+正文
+\end_layout
+
+\begin_layout Enumerate
+结论
+\end_layout
+
+\begin_layout Subsection
+结尾部分
+\end_layout
+
+\begin_layout Enumerate
+参考文献
+\end_layout
+
+\begin_layout Enumerate
+附录（可根据需要）
+\end_layout
+
+\begin_layout Enumerate
+插图和附表（可根据需要）
+\end_layout
+
+\begin_layout Enumerate
+索引（可根据需要）
+\end_layout
+
+\begin_layout Enumerate
+作者简历及在学期间所取得的科研成果（可根据需要）
+\end_layout
+
+\begin_layout Enumerate
+封底
+\end_layout
+
+\begin_layout Section
+编写规范与要求
+\end_layout
+
+\begin_layout Subsection
+前置部分
+\end_layout
+
+\begin_layout Enumerate
+封面：封面包括分类号、密级、校名、学位论文中文题目、英文题目、作者姓名、导师姓名、学科和专业名称、提交时间等内容（附件1）。
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+分类号：按中国图书分类法，根据学位论文的研究内容确定。
+\end_layout
+
+\begin_layout Standard
+密级：仅限于涉密学位论文（论文课题来源于国防军工项目）填写，密级应根据涉密学位论文确定，分绝密、机密和秘密三级，并注明保密期限（保密论文的密级和保密期限由学校保
+密办公室审批确定）。非涉密学位论文不得填写密级。
+\end_layout
+
+\begin_layout Standard
+论文题目：论文题目要准确反映整篇论文的核心内容。中文题目一般不超过25个汉字，英文题目翻译简短准确，一般不超过150个字母，必要时可以加副标题。
+\end_layout
+
+\begin_layout Standard
+学科和专业名称：按研究生培养的学科专业目录，规范填写。
+\end_layout
+
+\begin_layout Standard
+学位级别：博士研究生填写“博士”，硕士研究生填写“硕士”。
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+独创性声明：见附件2。
+\end_layout
+
+\begin_layout Enumerate
+关于学位论文使用授权的申明：见附件2。
+\end_layout
+
+\begin_layout Enumerate
+摘要：包括中文摘要和英文摘要两部份。摘要是论文内容的总结概括，应简要说明论文的研究目的、基本研究内容、研究方法、创新性成果及其理论与实际意义，突出论文的创新之处
+。不宜使用公式、图表，不标注引用文献。硕士论文摘要一般应在500字左右，博士论文摘要一般应在1000字左右。英文摘要与中文摘要内容要一致。关键词应体现论文特色，
+具有语义性，一般为3—5个。（见附件3）
+\end_layout
+
+\begin_layout Enumerate
+目录页：论文中内容标题的集合。目录页中每行均由标题名称和页码组成。包括摘要、章节或大标题的序号和名称、参考文献、注释、索引等。（见附件4）。
+\end_layout
+
+\begin_layout Enumerate
+插图和附表清单：论文中如图表较多，可以分别列出清单置于目录页之后。图的清单应有序号、图题和页码。表的清单应有序号、表题和页码。
+\end_layout
+
+\begin_layout Subsection
+主体部分
+\end_layout
+
+\begin_layout Standard
+包括引言（或绪论）、正文和结论。主体部分从另页右页开始，每一章另起页。
+\end_layout
+
+\begin_layout Enumerate
+基本要求
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+引言（绪论）：包括论文的研究目的、流程和方法等；还包括论文研究领域的历史回顾，文献回溯，理论分析等内容。
+\end_layout
+
+\begin_layout Enumerate
+正文：正文是学位论文的主体和核心部分，包括研究背景、立论根据、研究内容、研究方法与过程、研究结果与分析、研究结论及其意义。要求论述正确、逻辑严密、层次分明、文字
+流畅简练、公式图表清晰规范、数据真实可靠，公式推导和计算结果正确无误，避免使用文学性质的带感情色彩的非学术性词语。论文中如出现非通用性的新名词、新术语、新概念，
+应作相应解释。
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+图：图应具有“自明性”，应鲜明清晰。图包括曲线图、构造图、示意图、框图、流程图、记录图、地图、照片等。照片上应有表示目的物尺寸的标度。图的编号和图题规范，并应置
+于图下方。
+\end_layout
+
+\begin_layout Standard
+表：表应具有“自明性”。表的编号和表题应规范，并置于表上方。表题应简单明了。
+\end_layout
+
+\begin_layout Standard
+表的编排建议采用国际通行的三线表。一般是内容和测试项目由左至右横读，数据依序竖读。如某个表需要转页接排，在随后的各页上应重复表的编号。编号后跟表题（可省略）和“
+（续）”，置于表上方。续表均应重复表头和有关表述。
+\end_layout
+
+\begin_layout Standard
+公式：论文中的公式应另行起，并缩格书写，与周围文字留足够的空间区分开。如有两个以上的公式，应用从“1”开始的阿拉伯数字进行编号，并将编号置于括号内。公式的编号右
+端对齐，公式与编号之间可用“…”连接。公式较多时，应分章编号。较长的公式需要转行时，应尽可能在“＝”处回行，或者在“+”、“－”、“×”等记号处回行。
+\end_layout
+
+\begin_layout Standard
+公式下面的“式中：”空两个字起排，单独占一行。公式中所要解释的符号按先左后右，先上后下顺序分行空两个字排，再用破折号与释文连接，回行时与上一行释文对齐。上下行的
+破折号对齐。
+\end_layout
+
+\begin_layout Standard
+引文标注：论文中引用的文献的标注方法可采用顺序编码制，也可采用著者－出版年制，但全文必须统一。如：
+\end_layout
+
+\begin_layout Standard
+德国学者N.克罗斯研究了瑞十巴塞尔市附近侏罗山中老第三纪断裂对第三系褶皱的控制[25];之后，他又描述了西里西亚第3条大型的近南北向构造带，并提出地槽是在不均一的
+块体的基底上发展的思想[26,27]。(顺序编码制)
+\end_layout
+
+\begin_layout Standard
+结构分析的子结构法最早是为解决飞机结构这类大型和复杂结构的有限元分析问题而发展起来的（Przemienicki,1968）(著者-出版年制)
+\end_layout
+
+\begin_layout Standard
+注释：当论文中的字、词或短语，需要进一步加以说明，而又没有具体的文献来源时，用注释。注释一般在社会科学研究中用得较多。应控制论文中的注释数量，不宜过多。注释采用
+文中编号加“脚注”的方式，置于当页的页脚。
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+章节图表标号规则
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+章节标号
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+论文章节按序分层。层次以少为宜，根据实际需要选择。各层次标题可以用阿拉伯数字，也可以用汉字。
+\end_layout
+
+\begin_layout Standard
+用阿拉伯数字标题：各层次要用阿拉伯数字连续标号；不同层次的数字之间用小圆点“．”相隔，末位数字后面不加点号，如，“1.1”，“1.1.1”等；章、节编号全部顶格排，编
+号与标题之间空1个字符的间隙。正文另起行，前空2个汉字符起排，回行时顶格排。例如：
+\end_layout
+
+\begin_layout Standard
+第一章 ××××（章大标题）
+\end_layout
+
+\begin_layout Standard
+×××××××××××××××××××××××××××
+\end_layout
+
+\begin_layout Standard
+1.1 ××××（一级节标题）
+\end_layout
+
+\begin_layout Standard
+×××××××××××××××××××××××××××
+\end_layout
+
+\begin_layout Standard
+1.1.1 ××××（二级节标题）
+\end_layout
+
+\begin_layout Standard
+1.1.1.1 ××××（根据需要，也可设三级节标题）
+\end_layout
+
+\begin_layout Standard
+第二章 ××××（章大标题）
+\end_layout
+
+\begin_layout Standard
+2.1 ××××（一级节标题）
+\end_layout
+
+\begin_layout Standard
+2.1.1 ××××（二级节标题）
+\end_layout
+
+\begin_layout Standard
+用汉字标题：各层次要按“章”、“节”、“条”、“款”等依次编号，如：“第一章”，“第一节”、“一”、“（一）”等；章、节编号居中，编号与标题之间空1个汉字符的间
+隙。正文另起行，前空2个汉字符起排，回行时顶格排。例如：
+\end_layout
+
+\begin_layout Standard
+第一章 ××××（章大标题）
+\end_layout
+
+\begin_layout Standard
+第一节 ××××××××（节大标题）
+\end_layout
+
+\begin_layout Standard
+一、×××××××××（一级节标题）
+\end_layout
+
+\begin_layout Standard
+（一）×××××××××××××（二级节标题）
+\end_layout
+
+\begin_layout Standard
+（二）×××××××××××××（二级节标题）
+\end_layout
+
+\begin_layout Standard
+1.×××××××××××××××（三级节标题）
+\end_layout
+
+\begin_layout Standard
+（1）××××××××××××
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+图、表等标号
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+论文中的图、表、附注、公式、算式等，一律用阿拉伯数字分章依序连续编码。其标注形式应便于互相区别，如：图l.1（第1章第一个图）、图2.2（第二章第二个图）；表3.2（
+第三章第二个表）等。
+\end_layout
+
+\begin_layout Standard
+图题置于图序之后，图序和图题之间空1个汉字符的间隙，并应置于图下方的居中位置。引用图应在图题右上角标出文献来源。
+\end_layout
+
+\begin_layout Standard
+表题置于表序之后，表序和表题之间空1个汉字符的间隙，并置于表上方的居中位置。
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+页码、页眉编写规则
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+学位论文页码的摘要页和目录页用罗马数字单独编连续码，正文和后置部分用阿拉伯数字编连续码。单面复印时页码排在页脚居中位置，双面复印时页码分别按左右侧排列。
+\end_layout
+
+\begin_layout Standard
+页眉、页脚文字均采用小五号宋体，左侧页眉为“兰州大学博（硕）士学位论文”，右侧为学位论文题目名称；页眉下横线可为单横线也可用上粗下细文武线。
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+结论
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+论文的结论是最终的、总体的结论，不是正文中各段的小结的简单重复。结论应包括论文的核心观点，交代研究工作的局限，提出未来工作的意见或建议。结论应该准确、完整、明确
+、精练。
+\end_layout
+
+\begin_layout Standard
+如果不能导出一定的结论，也可以没有结论而进行必要的讨论。
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+结尾部分
+\end_layout
+
+\begin_layout Enumerate
+参考文献
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+参考文献是文中引用的有具体文字来源的文献集合，学位论文中引用他人成果之处均应如实、详细地列出参考文献目录。其著录项目和著录格式遵照《文后参考文献著录规则》（GB
+/T
+\begin_inset space ~
+\end_inset
+
+7714－2006）的规定执行。
+\end_layout
+
+\begin_layout Standard
+参考文献可以列在各章的结尾，也可以列在正文的末尾，并另起页。所有被引用文献均要列入参考文献表中。引文采用顺序编码标注时，参考文献表按编码顺序排列，引文采用著作－
+出版年制标注时，参考文献表应按著者字顺和出版年排序。
+\end_layout
+
+\begin_layout Standard
+各种主要参考文献按如下格式编排（附件5）：
+\end_layout
+
+\begin_layout Standard
+学术期刊：序号作者 文题 刊名 年 卷号（期号） 起止页码
+\end_layout
+
+\begin_layout Standard
+专（译）著：序号作者（译者） 书名 出版地 出版者 出版年 起止页码
+\end_layout
+
+\begin_layout Standard
+学位论文：序号作者 文题 [XX学位论文] 授予单位所在地 授予单位 授予年份 起止页码
+\end_layout
+
+\begin_layout Standard
+专利：序号申请者 专利名 国名 专利文献种类 专利号 出版日期
+\end_layout
+
+\begin_layout Standard
+技术标准：序号发布单位 技术标准代号 技术标准名称 出版地：出版者，出版日期
+\end_layout
+
+\begin_layout Standard
+电子文献：序号 作者 出版年 题名 出版地 出版者 ［引用日期］ 获取和访问路径
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+附录
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+附录作为主体部分的补充，并不是必须的。下列内容可以作为附录编于论文后：
+\end_layout
+
+\begin_layout Standard
+为了整篇论文材料的完整，但编入正文又有损于编排的条理性和逻辑性，这一材料包括比正文更为详尽的信息、研究方法和技术更深入的叙述，对了解正文内容有用的补充信息等；
+\end_layout
+
+\begin_layout Standard
+由于篇幅过大或取材于复制品而不便于编入正文的材料；
+\end_layout
+
+\begin_layout Standard
+不便于编入正文的罕见珍贵资料；
+\end_layout
+
+\begin_layout Standard
+对一般读者并非必要阅读，但对本专业同行有参考价值的资料；
+\end_layout
+
+\begin_layout Standard
+某些重要的原始数据、数学推导、结构图、统计表、计算机打印输出件等。
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+索引：根据需要可以编排分类索引，关键词索引等。
+\end_layout
+
+\begin_layout Enumerate
+作者简历：包括教育经历、工作经历、攻读学位期间发表的论文和完成的工作等。攻读学位期间发表的论文按发表的时间顺序，列出本人在攻读学位期间发表或已录用的学术论文清单
+，包括发表文章与出版论著（已发表或已录用）、已获专利、科研成果及获奖情况分项列出。
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+发表文章与出版论著列出格式同参考文献格式。
+\end_layout
+
+\begin_layout Standard
+获奖成果列出格式为：获奖成果名称 奖励级别与获奖等级 获奖年份与日期 获奖人
+\end_layout
+
+\begin_layout Standard
+获专利成果列出格式为：获专利名称 专利号 何国何类专利 授权日期 专利人
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+致谢：致谢对象限于对课题研究、学位论文完成等方面有较重要帮助的人员。主要包括：对国家科学基金、资助研究工作的奖学金基金、合同单位、资助或支持的企业、组织或个人；
+对协助完成研究工作和提供便利条件的组织或个人；对在研究工作中提出建议和提供帮助的人；对给予转载和引用权的资料、图片、文献、研究思想和设想的所有者；对其他应感谢的
+组织和个人。
+\end_layout
+
+\begin_layout Section
+论文打印规格
+\end_layout
+
+\begin_layout Standard
+学位论文用A4标准纸(210
+\begin_inset space ~
+\end_inset
+
+mm
+\begin_inset space ~
+\end_inset
+
+×297
+\begin_inset space ~
+\end_inset
+
+mm)打印、印刷或复印，按论文顺序装订成册，论文顺序依次为：封面（包括扉页）、论文原创性声明、关于学位论文使用授权的申明、中文摘要、英文摘要、目录、论文正文、参
+考文献、符号说明、注释、附录、攻读学位期间发表的学术论文目录、致谢等。
+\end_layout
+
+\begin_layout Standard
+论文页边距一般要求：上边距3cm、下边距2.54cm，左右边距3.17cm，页眉页脚2.0cm。
+\end_layout
+
+\begin_layout Subsection
+封面
+\end_layout
+
+\begin_layout Standard
+论文封面颜色：博士学位论文为浅红色，硕士学位论文（除硕士专业学位论文）为浅蓝色，硕士专业学位论文为银白色。
+\end_layout
+
+\begin_layout Standard
+论文题目用三号字，宋体，加粗，其他信息用小三号字，宋体，加粗，居中。题目可严格按照封面模板格式控制各部分的字体、字号。
+\end_layout
+
+\begin_layout Standard
+书脊须写明论文题目、姓名、兰州大学、年份，用四号字，仿宋，行距16磅，段前段后0磅。
+\end_layout
+
+\begin_layout Subsection
+摘要
+\end_layout
+
+\begin_layout Enumerate
+中文摘要
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+论文题目为三号字，黑体，加粗，居中，单倍行距，段前24磅，段后18磅。可分行，每行左右两边至少留3个汉字符空格。
+\end_layout
+
+\begin_layout Enumerate
+论文题目下为“摘要”，两字间空1个汉字符间隙，三号字，黑体，加粗，居中，单倍行距，段前24磅，段后18磅。
+\end_layout
+
+\begin_layout Enumerate
+摘要内容为小四号字，宋体，行距20磅，段前段后0磅，首行缩进2个汉字符。
+\end_layout
+
+\begin_layout Enumerate
+摘要内容后下空1行，行距20磅，段前段后0磅。
+\end_layout
+
+\begin_layout Enumerate
+摘要内容后为“关键词”，小四号字，宋体，行距20磅，段前段后0磅，“关键词”三字加粗。关键词数量为3-5个，词与词间用逗号隔开。
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+英文摘要
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+除“Abstract”外，论文中的英文一律采用“Times
+\begin_inset space ~
+\end_inset
+
+New
+\begin_inset space ~
+\end_inset
+
+Roman”字体。论文英文题目全部采用大写字母，16磅，加粗，居中，单倍行距，段前24磅，段后18磅。论文题目可分行，每行左右两边至少留6个字符空格。
+\end_layout
+
+\begin_layout Enumerate
+英文摘要为“Abstract”，Arial字体，16磅，加粗，居中，单倍行距，段前24磅，段后18磅。
+\end_layout
+
+\begin_layout Enumerate
+英文摘要内容每段开头留四个字符空格，10.5磅，行距20磅，段前段后0磅。
+\end_layout
+
+\begin_layout Enumerate
+摘要内容后下空1行，10.5磅，行距20磅，段前段后0磅。
+\end_layout
+
+\begin_layout Enumerate
+摘要内容后为“Key words”，10.5磅，行距20磅，段前段后0磅。“Key words”加粗。
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+目录
+\end_layout
+
+\begin_layout Standard
+“目录”两字间空1个汉字符间隙，三号字，黑体，加粗，居中，，单倍行距，段前24磅，段后18磅。
+\end_layout
+
+\begin_layout Standard
+目录下方为章、节、条、款及其起始页码，章、节、条、款层次代号可以用阿拉伯数字或汉字。目录中一般只出现三级标题，一级标题为宋体，四号字，行距20磅，段前6磅，段后
+0磅，两端对齐，页码右对齐，二级、三级标题为宋体，小四号字，行距20磅，段前6磅，段后0磅，两端对齐，页码右对齐，左缩进2个汉字符，序号与题名间空1个字符宽度。
+\end_layout
+
+\begin_layout Subsection
+正文
+\end_layout
+
+\begin_layout Standard
+正文标题：一级标题为三号字，黑体，加粗，居中，单倍行距，段前24磅，段后18磅；二级标题为四号字，黑体，顶左，单倍行距，段前24磅，段后6磅；三级标题为小四号字
+，黑体，首行缩进2个汉字符，单倍行距，段前12磅，段后6磅。
+\end_layout
+
+\begin_layout Standard
+正文：采用小四号字，宋体（英文用Times
+\begin_inset space ~
+\end_inset
+
+New
+\begin_inset space ~
+\end_inset
+
+Roman体，12磅），两端对齐，段落首行左缩进2个汉字符，行距20磅，段前段后0磅。
+\end_layout
+
+\begin_layout Standard
+图：图名置于图的下方，五号字，宋体，居中，单倍行距，段前6磅，段后12磅，图序与图名之间空2个汉字符。
+\end_layout
+
+\begin_layout Standard
+表：表名置于表的上方，五号字，宋体，居中，单倍行距，段前6磅，段后6磅，表序与表名之间空2个汉字符。表下方的注释为五号字，宋体，居左（英文用Times
+\begin_inset space ~
+\end_inset
+
+New
+\begin_inset space ~
+\end_inset
+
+Roman体10.5磅），单倍行距。
+\end_layout
+
+\begin_layout Standard
+注释：一般分为页末注（脚注）和篇末注。脚注，宋体，9磅（英文用Times
+\begin_inset space ~
+\end_inset
+
+New
+\begin_inset space ~
+\end_inset
+
+Roman，9磅），左对齐，单倍行距，段前段后0磅，按阿拉伯数字编号，每页须重新编号，具体格式参照参考书目格式。
+\end_layout
+
+\begin_layout Subsection
+参考文献
+\end_layout
+
+\begin_layout Standard
+“参考文献”为三号字，黑体，加粗，居中，单倍行距，段前24磅，段后18磅。
+\end_layout
+
+\begin_layout Standard
+参考文献内容为五号字（英文用Times
+\begin_inset space ~
+\end_inset
+
+New
+\begin_inset space ~
+\end_inset
+
+Roman体，10.5磅），宋体，行距16磅，段前段后0磅。
+\end_layout
+
+\begin_layout Subsection
+其他
+\end_layout
+
+\begin_layout Standard
+“附录”、“索引”两字间空2个汉字间隙，三号字，黑体，加粗，居中，单倍行距，段前24磅，段后18磅。附录、索引的内容为五号字（英文用Times
+\begin_inset space ~
+\end_inset
+
+New
+\begin_inset space ~
+\end_inset
+
+Roman体，10.5磅），宋体，行距16磅，段前段后0磅。
+\end_layout
+
+\begin_layout Standard
+“致谢”两字间空2个汉字间隙，三号字，黑体，加粗，居中，单倍行距，段前24磅，段后18磅。致谢正文部分首行缩进两字符，小四号字，仿宋，行距16磅，段前段后0磅。
+\end_layout
+
+\begin_layout Standard
+“在学期间的研究成果”为三号字，黑体，加粗，居中，单倍行距，段前24磅，段后18磅。在学期间的研究成果内容为五号字（英文用Times
+\begin_inset space ~
+\end_inset
+
+New
+\begin_inset space ~
+\end_inset
+
+Roman体，10.5磅），宋体，行距16磅，段前段后0磅。
+\end_layout
+
+\end_body
+\end_document

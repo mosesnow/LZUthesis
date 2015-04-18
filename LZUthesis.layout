@@ -1,0 +1,179 @@
+﻿#% Do not delete the line below; configure depends on this
+
+# \DeclareLaTeXClass[LZUthesis]{article (LZUthesis)}
+
+# Input general definitions
+
+Input stdclass.inc
+
+Style Classification
+    CopyStyle       Abstract
+    LatexType       Command
+    LatexName       classification
+    LabelType       Static
+    LabelString     "Class:"
+    LabelFont
+      Series        Bold
+      Size          Small
+    EndFont
+    Align           Left
+End
+
+Style confidential
+    CopyStyle       Abstract
+    LatexType       Command
+    LatexName       confidential
+    LabelType       Static
+    LabelString     "Confi:"
+    LabelFont
+      Series        Bold
+      Size          Small
+    EndFont
+    Align           Left
+End
+
+Style Title
+    CopyStyle       Title
+    LatexName       title
+    OptionalArgs     1
+End
+
+Style Title-sec
+    CopyStyle       Title
+    LatexName       titleadd
+End
+
+Style eTitle
+    CopyStyle       Title
+    LatexName       englishtitle
+End
+
+Style eTitle-sec
+    CopyStyle       Title
+    LatexName       englishtitleadd
+End
+
+Style advisor
+    CopyStyle       Author
+    LatexName       advisor
+    LabelType       Static
+    LabelString     "Advisor:"
+End
+
+Style Degree
+    CopyStyle       Author
+    LatexName       degree
+    LabelType       Static
+    LabelString     "Degree:"
+    InTitle         1
+End
+
+Style Major
+    CopyStyle       Degree
+    LatexName       major
+    LabelString     "Major:"
+End
+
+Style direction
+    CopyStyle       Degree
+    LatexName       direction
+    LabelString     "Direction:"
+End
+
+Style YearCN
+    CopyStyle       Degree
+    LatexName       yearcn
+    LabelString     "YearCN:"
+End
+
+Style submitDate
+    CopyStyle       Date
+    LatexName       submitdate
+    InTitle         1
+    LabelType       Static
+    LabelString     "Submit Date:"
+End
+
+Style degreeDate
+    CopyStyle       Date
+    LatexName       degreedate
+    InTitle         1
+    LabelType       Static
+    LabelString     "DegreeDate:"
+End
+
+Style datebeginAndEnd
+    CopyStyle       Date
+    LatexName       datebeginAndEnd
+    InTitle         1
+    LabelType       Static
+    LabelString     "DatebeginAndEnd:"
+End
+
+Style defenddate
+    CopyStyle       Date
+    LatexName       defenddate
+    InTitle         1
+    LabelType       Static
+    LabelString     "Defenddate:"
+End
+
+Style leftheader
+    CopyStyle       Degree
+    LatexName      lzuthesis
+    LabelString     "leftheader:"
+End
+
+Style Keywords
+    CopyStyle       Abstract
+    LatexType       Command
+    LatexName       keywords
+    LabelType       Static
+    LabelString     "Keywords:"
+    LabelFont
+      Series        Bold
+      Size          Small
+    EndFont
+    Align           Center
+End
+
+Style Abstract(en)
+    CopyStyle       Abstract
+    LatexName       englishabstract
+    LabelString     "Abstract(en)"
+End
+
+Style Keywords(en)
+    CopyStyle       Keywords               
+    LatexName       englishkeywords
+    LabelType       Static
+    LabelString     "Keywords(en):"
+    Align           Center
+End
+
+
+Style Resume
+    CopyStyle       Standard
+    LatexType       Environment
+    Category        BackMatter
+    LatexName       resume
+    LabelType       Centered_Top_Environment
+    LabelString     "Resume"
+    LabelFont
+      Series        Bold
+      Size          Large
+    EndFont
+End
+
+Style Thanks
+    CopyStyle       Standard
+    LatexType       Environment
+    Category        BackMatter
+    LatexName       thanks
+    LabelType       Centered_Top_Environment
+    LabelString     "Thanks"
+    LabelFont
+      Series        Bold
+      Size          Large
+    EndFont
+End
