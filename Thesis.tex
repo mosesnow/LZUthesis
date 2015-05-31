@@ -34,6 +34,16 @@
 %允许equationarray分页换行
 \allowdisplaybreaks
 
+%使字体清晰，且透明位图不会使页面文字粗细不一
+\usepackage{eso-pic}
+\AddToShipoutPicture{%
+\special{pdf: put @thispage <</Group << /S /Transparency /I true /CS /DeviceRGB>> >>}%
+}
+
+%页面背景色
+%\definecolor{yellow}{rgb}{0.99,0.99,0.70}
+%\pagecolor{yellow}
+
 \makeatother
 
 
@@ -142,7 +152,7 @@ This paper is a \LaTeX{} (include LyX) thesis template of Lanzhou University. Be
 
 \chapter{系统配置}
 
-\texttt{LZUthesis}宏包使用了宏包amsmath、amsthm、amsfonts、amssymb、bm、ctex 和hyperref。目前大多数的\TeX{}系统中都包含有这些宏包。但是中文字体在各个系统中却不尽相同：Windows 下使用C\TeX{} 套装一般不需要额外配置字体，但Linux 和Mac一般情况下需要设定中文字体，中文字体名称可通过命令~\lstinline!sudo fc-list :lang=zh-cn!~查看，具体配置见本章内容。请注意字体设定可能要根据你自己系统的中文字体做相应调整。
+\texttt{LZUthesis}宏包使用了宏包amsmath、amsthm、amsfonts、amssymb、bm、ctex 和hyperref。目前大多数的\TeX{}系统中都包含有这些宏包。但是中文字体在各个系统中却不尽相同：Windows 下使用C\TeX{} 套装一般不需要额外配置字体，但Linux 和Mac一般情况下需要设定中文字体，中文字体名称可通过命令~\lstinline!sudo fc-list :lang=zh-cn!~ 查看，具体配置见本章内容。请注意字体设定可能要根据你自己系统的中文字体做相应调整。
 
 
 \section{Windows配置}
@@ -283,7 +293,7 @@ lzubib.bst & ---引文样式文件 & \textcolor{red}{{*}} & \textcolor{magenta}{
 \hline
 bib/thesis.bib & ---bib数据库 & \textcolor{red}{{*}} & \textcolor{magenta}{\$}\\
 \hline
-figures/lzu.eps & ---兰州大学校名标准字 & \textcolor{red}{{*}} & \textcolor{magenta}{\$}\\
+figures/lzu.pdf & ---兰州大学校名标准字 & \textcolor{red}{{*}} & \textcolor{magenta}{\$}\\
 \hline
 Thesis.lyx & ---LyX模板主文件 & \textcolor{red}{{*}} & -\\
 \hline
@@ -452,7 +462,7 @@ makefile仅限\LaTeX{}模板编译使用，适合Linux和Mac用户使用。
 \end{minipage}}
 
 
-\section{修复stemV问题}
+\section[修复stemV问题]{修复stemV问题\footnote{此问题已在修复透明位图导致文字粗细不一的问题时同时得到解决。}}
 
 由于中文字体某些参数设置不当，\LaTeX{}生成的pdf在Adobe阅读器下中文字体(特别是宋体与仿宋)会稍显模糊，可通过修改stemV值改善。
 \begin{enumerate}
@@ -580,6 +590,8 @@ Ajouter de la vie aux jours lorsqu'on ne peut plus ajouter de jours
 \item 摘要重定义为chapter，间距微调
 \item chapter标题上下间距微调
 \item 去除摘要、Abstract、目录的页眉
+\item lzu.eps替代为lzu.pdf
+\item 修复透明位图导致文字粗细不一的问题
 \end{enumerate}
 
 

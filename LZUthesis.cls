@@ -147,7 +147,7 @@
     \vskip 10pt
 
       % Requires \usepackage{graphicx}
-    \includegraphics[width=7.4cm]{lzu.eps}\\
+    \includegraphics[width=7.4cm]{lzu.pdf}\\
 
    \bf \zihao{3}\LZU@label@thesis
     \vskip 1.0cm
@@ -227,7 +227,7 @@
     \vskip 10pt
 
       % Requires \usepackage{graphicx}
-    \includegraphics[width=7.4cm]{lzu.eps}\\
+    \includegraphics[width=7.4cm]{lzu.pdf}\\
 
    \bf \zihao{3}\LZU@label@thesis
     \vskip 1.0cm

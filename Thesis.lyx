@@ -22,6 +22,16 @@
 
 %允许equationarray分页换行
 \allowdisplaybreaks
+
+%使字体清晰，且透明位图不会使页面文字粗细不一
+\usepackage{eso-pic}
+\AddToShipoutPicture{%
+\special{pdf: put @thispage <</Group << /S /Transparency /I true /CS /DeviceRGB>> >>}%
+}
+
+%页面背景色
+%\definecolor{yellow}{rgb}{0.99,0.99,0.70}
+%\pagecolor{yellow}
 \end_preamble
 \options twoside,longtitle
 \use_default_options false
@@ -1596,7 +1606,7 @@ $
 \begin_inset Text
 
 \begin_layout Plain Layout
-figures/lzu.eps
+figures/lzu.pdf
 \end_layout
 
 \end_inset
@@ -2189,7 +2199,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/lzu.eps
+	filename figures/lzu.pdf
 	width 61.8text%
 
 \end_inset
@@ -2660,6 +2670,16 @@ bibliography{bib/thesis}
 
 \begin_layout Section
 修复stemV问题
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+此问题已在修复透明位图导致文字粗细不一的问题时同时得到解决。
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3174,6 +3194,14 @@ chapter标题上下间距微调
 
 \begin_layout Enumerate
 去除摘要、Abstract、目录的页眉
+\end_layout
+
+\begin_layout Enumerate
+lzu.eps替代为lzu.pdf
+\end_layout
+
+\begin_layout Enumerate
+修复透明位图导致文字粗细不一的问题
 \end_layout
 
 \begin_layout Chapter
