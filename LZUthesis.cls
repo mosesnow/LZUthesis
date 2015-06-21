@@ -120,9 +120,6 @@
 \newcommand\titleadd[1]{\def\LZU@value@titleadd{#1}}
 
 
-\renewcommand*\tablename{ \zihao{5}\CTEX@tablename }%调整标题的字号
-\renewcommand*\figurename{ \zihao{5}\CTEX@figurename}%调整标题的字号
-
 %定义单行完整标题
 \def\LZU@value@fulltitle{\CAST@value@title}
 \def\LZU@value@fulletitle{\CAST@value@englishtitle}

@@ -1948,6 +1948,10 @@ key "Knut04-T"
 \end_layout
 
 \begin_layout Standard
+自旋玻色模型的哈密顿量为
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 \hat{H}=\frac{\epsilon}{2}\hat{\sigma}_{z}-\frac{\Delta}{2}\hat{\sigma}_{x}+\sum_{k}\omega_{k}\hat{b}_{k}^{\dagger}\hat{b}_{k}+\sum_{k}\frac{g_{k}}{2}\hat{\sigma}_{z}(\hat{b}_{k}+\hat{b}_{k}^{\dagger})\label{eq:sbm}
@@ -1960,6 +1964,10 @@ key "Knut04-T"
 
 \begin_layout Subsection
 表格
+\end_layout
+
+\begin_layout Standard
+前五个希腊字母
 \end_layout
 
 \begin_layout Standard
@@ -2187,6 +2195,10 @@ name "tab:Greek"
 
 \begin_layout Subsection
 图形
+\end_layout
+
+\begin_layout Standard
+兰州大学校名标准字
 \end_layout
 
 \begin_layout Standard
@@ -3202,6 +3214,10 @@ lzu.eps替代为lzu.pdf
 
 \begin_layout Enumerate
 修复透明位图导致文字粗细不一的问题
+\end_layout
+
+\begin_layout Enumerate
+修复与ctex宏包2.0版本的兼容性
 \end_layout
 
 \begin_layout Chapter

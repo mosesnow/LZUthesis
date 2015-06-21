@@ -114,6 +114,7 @@
   \hbox{}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
 \renewcommand{\floatpagefraction}{0.80}
 %\bibliographystyle{plain}
+\expandafter\def\csname CTEX@spaceChar\endcsname{\hspace{1em}}
 \newcommand\CASTspace{\protect\CTEX@spaceChar\protect\CTEX@spaceChar}
 \def\CAST@getfileinfo#1 #2 #3\relax#4\relax{%
   \def\CASTfiledate{#1}%
