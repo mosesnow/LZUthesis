@@ -425,6 +425,7 @@ $\square$ 不宜公开，已在学位办公室办理保密申请，解密后适�
                     \@afterindentfalse
                     \secdef\@chapter\@schapter
                     }
+\def\CTEX@chapter@pagestyle{lzu}
 
 \renewcommand\tableofcontents{%
     \if@twocolumn
