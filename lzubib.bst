@@ -180,7 +180,7 @@ FUNCTION {output.bibitem}
 %}
 
  FUNCTION {fin.entry}
- { add.period$   
+ { add.period$
    write$
    %remove.dots
    newline$
@@ -752,7 +752,7 @@ FUNCTION {link.tag.open}
       if$
     }
     {
-      doi.base.command swap$ * 
+      doi.base.command swap$ *
       href.command
     }
   if$
@@ -776,7 +776,7 @@ FUNCTION {link.shut}
 
 
 
-FUNCTION {book} 
+FUNCTION {book}
 { output.bibitem
   author empty$
     { format.editors "author and editor" output.check }
@@ -805,12 +805,12 @@ FUNCTION {book}
   format.edition output
   format.address.publisher output
   pages empty$
-    { format.date "year" output.check 
+    { format.date "year" output.check
       % new.sentence
       % format.pages output
     }
     { format.date ":" * format.pages * output }
-  if$  
+  if$
   fin.entry
 }
 
@@ -821,7 +821,7 @@ FUNCTION {article}
   format.title "[J]" * "title" output.check
   new.block
   crossref missing$
-    { 
+    {
       link.open
       %journal emphasize "journal" output.check
       journal add.blank2
@@ -837,7 +837,7 @@ FUNCTION {article}
     }
   if$
   new.block
-  format.note output  
+  format.note output
   fin.entry
 }
 
@@ -939,7 +939,7 @@ FUNCTION {inproceedings}
       year output
     }
     { %address output.nonnull
-      format.address.publisher output  
+      format.address.publisher output
       %format.date "year" output.check
       year output
       new.sentence
@@ -956,7 +956,7 @@ FUNCTION {inproceedings}
     }
   if$
   new.block
-  format.note output  
+  format.note output
   fin.entry
 }
 
@@ -1005,7 +1005,7 @@ FUNCTION {mastersthesis}
   new.block
   format.address.school output
   %format.madd "address" output.check
-  %school "school" output.check  
+  %school "school" output.check
   format.date "year" output.check
   new.block
   note output
@@ -1037,7 +1037,7 @@ FUNCTION {phdthesis}
   new.block
   format.address.school output
   %address output
-  %school "school" output.check  
+  %school "school" output.check
   format.date "year" output.check
   new.block
   note output
@@ -1155,10 +1155,16 @@ FUNCTION {longest.label.pass}
   if$
 }
 
+FUNCTION {doi.base}
+{
+  "http://dx.doi.org/"
+}
+
 FUNCTION {init.bib}
 {
   "\makeatletter" write$ newline$
   "\providecommand " noop.command "[0]{\@secondoftwo}%" * * write$ newline$
+  "\providecommand \doibase [0]{" doi.base "}%" * * write$ newline$
 }
 
 EXECUTE {initialize.longest.label}
@@ -1171,8 +1177,8 @@ FUNCTION {begin.bib}
     { preamble$ write$ newline$ }
   if$
   "\providecommand{\href}[2]{#2}"
-  "\begingroup\zihao{5}\raggedright\begin{thebibliography}{" * longest.label  * 
-  "}\linespread{1}\selectfont" * write$ newline$ 
+  "\begingroup\zihao{5}\raggedright\begin{thebibliography}{" * longest.label  *
+  "}\linespread{1}\selectfont" * write$ newline$
   init.bib
 }
 

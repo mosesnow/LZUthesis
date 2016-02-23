@@ -40,7 +40,7 @@
 \ProvidesClass{LZUthesis}
   [2011/012/01  LZUthesis
    document class]
-
+\PassOptionsToPackage{no-math}{fontspec}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{CASmthesis}}
 \ProcessOptions
 \LoadClass{CASmthesis}[2005/11/25]
@@ -49,14 +49,14 @@
 \AtEndOfPackage{\makeatletter\input{LZUthesis.cfg}\makeatother}
 
 
-%双线页眉      
-\renewcommand{\headrulewidth}{0.5pt}  
-\newcommand{\headrulewidthh}{1.0pt}                             
+%双线页眉
+\renewcommand{\headrulewidth}{0.5pt}
+\newcommand{\headrulewidthh}{1.0pt}
 \def\headrule{{\if@fancyplain\let\headrulewidth\plainheadrulewidth\fi%
-\hrule\@height\headrulewidthh\@width\headwidth\vskip1pt%上面线为1pt粗  
-\hrule\@height\headrulewidth\@width\headwidth  %下面0.5pt粗            
-\vskip-2\headrulewidth\vskip-1pt}      %两条线的距离1pt        
-\vspace{6mm}}     %双线与下面正文之间的垂直间距              
+\hrule\@height\headrulewidthh\@width\headwidth\vskip1pt%上面线为1pt粗
+\hrule\@height\headrulewidth\@width\headwidth  %下面0.5pt粗
+\vskip-2\headrulewidth\vskip-1pt}      %两条线的距离1pt
+\vspace{6mm}}     %双线与下面正文之间的垂直间距
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -65,8 +65,8 @@
   \thispagestyle{lzuempty}%
   \hbox{}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
 
-  
-%重新定义空白页，让其只显示页码 
+
+%重新定义空白页，让其只显示页码
 \fancypagestyle{lzuempty}{%
   \fancyhf{}%
   \renewcommand{\headrulewidth}{0pt}%
@@ -387,9 +387,9 @@ $\square$ 不宜公开，已在学位办公室办理保密申请，解密后适�
       %\phantomsection %加这个命令后，目录中的超链接才指向正确的页码
       %\addcontentsline{toc}{chapter}{\textbf{\CAST@label@abstract}}
    \end{center}
-   
+
   }
-  
+
 
 
 
@@ -403,7 +403,7 @@ $\square$ 不宜公开，已在学位办公室办理保密申请，解密后适�
       %\phantomsection %加这个命令后，目录中的超链接才指向正确的页码
       %\addcontentsline{toc}{chapter}{\textbf{\CAST@label@englishabstract}}
     \end{center}
-  
+
   }
 
 
@@ -442,7 +442,7 @@ $\square$ 不宜公开，已在学位办公室办理保密申请，解密后适�
 
 %改变图表的编号格式
 \renewcommand{\thefigure}{\thechapter-\@arabic\c@figure}
-\renewcommand{\thetable}{\thechapter-\@arabic\c@table}   
+\renewcommand{\thetable}{\thechapter-\@arabic\c@table}
 
 \endinput
 %%
