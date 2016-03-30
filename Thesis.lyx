@@ -2488,6 +2488,10 @@ reference "chap:intro"
 \end_layout
 
 \begin_layout Enumerate
+文档类notypeinfo选项去除typeinfo。
+\end_layout
+
+\begin_layout Enumerate
 启用导言区(文档--首选项--LaTeX导言区)的
 \begin_inset space ~
 \end_inset
