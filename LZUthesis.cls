@@ -109,7 +109,7 @@
 %\newcommand{\liuhao}{\fontsize{8pt}{\baselineskip}\selectfont}         % 字号设置
 %\newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}       % 字号设置
 
-
+\setmainfont{Times New Roman} %按要求设置英文字体
 \renewcommand{\baselinestretch}{1.39} %按要求相当于word设置行间距为20磅
 
 
