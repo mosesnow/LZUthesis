@@ -32,6 +32,9 @@
 %页面背景色
 %\definecolor{yellow}{rgb}{0.99,0.99,0.70}
 %\pagecolor{yellow}
+
+%浮动项超链接正确跳转
+\usepackage[all]{hypcap}
 \end_preamble
 \options twoside,longtitle
 \use_default_options false
