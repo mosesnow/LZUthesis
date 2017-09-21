@@ -3,15 +3,19 @@ LZUthesis是兰州大学学位论文的LyX模板以及LaTeX模板，包括硕士
 
 ## 下载
 
-* [下载tar.gz压缩包][targz]，适合Linux/Mac用户
+* [下载tar压缩包][targz]，适合Linux/Mac用户
 * [下载zip压缩包][zip]，适合Windows用户
 
 [targz]: https://github.com/mosesnow/LZUthesis/tarball/master
 [zip]: https://github.com/mosesnow/LZUthesis/zipball/master
 
-* 也可以从github克隆最新版模板：
+* __建议通过克隆的方式获取模板：__
 
-	$ git clone https://github.com/mosesnow/LZUthesis.git
+	根据平台设置，可以自动处理换行符，[详情请参考此处][autocrlf]
+	
+	$ git clone https://github.com/mosesnow/LZUthesis.git 
+	
+[autocrlf]:https://git-scm.com/book/zh/v1/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-%E9%85%8D%E7%BD%AE-Git#格式化与空白
 
 ## 使用
 
