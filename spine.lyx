@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass LZUthesis
 \begin_preamble
 % !Mode:: "TeX:UTF-8"   %%winedt 以utf8编码打开
@@ -56,16 +58,18 @@
 \language_package none
 \inputencoding utf8-plain
 \fontencoding default
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format pdf4
 \output_sync 0
@@ -95,6 +99,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 1
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -103,7 +108,10 @@
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -131,7 +139,8 @@ status open
 \end_layout
 
 \begin_layout Title-sec
-LaTeX模板简介
+\SpecialChar LaTeX
+模板简介
 \begin_inset Note Note
 status open
 
@@ -145,7 +154,7 @@ status open
 \end_layout
 
 \begin_layout Author
-刘海滨
+XXX
 \begin_inset Note Note
 status open
 

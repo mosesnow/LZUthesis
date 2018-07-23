@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass LZUthesis
 \begin_preamble
 % !Mode:: "TeX:UTF-8"   %%winedt 以utf8编码打开
@@ -43,16 +45,18 @@
 \language_package none
 \inputencoding utf8-plain
 \fontencoding default
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format pdf4
 \output_sync 0
@@ -82,6 +86,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 1
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -90,7 +95,10 @@
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -144,7 +152,8 @@ status open
 \end_layout
 
 \begin_layout Title-sec
-LaTeX模板简介
+\SpecialChar LaTeX
+模板简介
 \begin_inset Note Note
 status open
 
@@ -158,7 +167,8 @@ status open
 \end_layout
 
 \begin_layout eTitle
-Introduction to the LaTeX Template of
+Introduction to the \SpecialChar LaTeX
+ Template of
 \begin_inset Note Note
 status open
 
@@ -390,11 +400,13 @@ status open
 
 \end_inset
 
-本文是兰州大学学位论文的LaTeX
+本文是兰州大学学位论文的\SpecialChar LaTeX
+
 \begin_inset space ~
 \end_inset
 
-(包含LyX)模板及其使用说明。除了介绍文档类LZUthesis的用法外，本文还是一份简要的学位论文写作指南。
+(包含\SpecialChar LyX
+)模板及其使用说明。除了介绍文档类LZUthesis的用法外，本文还是一份简要的学位论文写作指南。
 \end_layout
 
 \begin_layout Keywords
@@ -407,7 +419,9 @@ status open
 
 \end_inset
 
-兰州大学，学位论文，LaTeX模板，LyX模板
+兰州大学，学位论文，\SpecialChar LaTeX
+模板，\SpecialChar LyX
+模板
 \end_layout
 
 \begin_layout Abstract(en)
@@ -420,9 +434,12 @@ status open
 
 \end_inset
 
-This paper is a LaTeX (include LyX) thesis template of Lanzhou University.
- Besides the usage of the LaTeX document class LZUthesis, a brief guideline
- for writing the thesis is also included.
+This paper is a \SpecialChar LaTeX
+ (include \SpecialChar LyX
+) thesis template of Lanzhou University.
+ Besides the usage of the \SpecialChar LaTeX
+ document class LZUthesis, a brief guideline for
+ writing the thesis is also included.
 \end_layout
 
 \begin_layout Keywords(en)
@@ -435,7 +452,9 @@ status open
 
 \end_inset
 
-Lanzhou University, Thesis, LaTeX Template, LyX Template
+Lanzhou University, Thesis, \SpecialChar LaTeX
+ Template, \SpecialChar LyX
+ Template
 \end_layout
 
 \begin_layout Standard
@@ -560,7 +579,8 @@ href{http://ge.lzu.edu.cn/degree/xwsq/lwgf/201103/1187.htm}{~Word模板}
 
 \end_inset
 
-。广大理科生更加青睐的LaTeX却没有标准模板。
+。广大理科生更加青睐的\SpecialChar LaTeX
+却没有标准模板。
 \begin_inset ERT
 status open
 
@@ -615,31 +635,43 @@ href{https://github.com/mosesnow/LZUthesis/commits/master}{~Github~}
 
 \end_inset
 
-)，使之更加符合兰大学位论文的撰写要求，并制作了相应的LyX模板。
+)，使之更加符合兰大学位论文的撰写要求，并制作了相应的\SpecialChar LyX
+模板。
 \end_layout
 
 \begin_layout Standard
-宏包底层使用的是XeLaTeX，而不是CJK方案，原因在于：
+宏包底层使用的是Xe\SpecialChar LaTeX
+，而不是CJK方案，原因在于：
 \end_layout
 
 \begin_layout Enumerate
-XeLaTeX支持系统字体，对中文友好。
+Xe\SpecialChar LaTeX
+支持系统字体，对中文友好。
 \end_layout
 
 \begin_layout Enumerate
-XeLaTeX支持unicode，可编译各国文字。
+Xe\SpecialChar LaTeX
+支持unicode，可编译各国文字。
 \end_layout
 
 \begin_layout Enumerate
-XeLaTeX支持常见的图片格式，如：pdf、eps、jpg、png等。
+Xe\SpecialChar LaTeX
+支持常见的图片格式，如：pdf、eps、jpg、png等。
 \end_layout
 
-\begin_layout --Separator--
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
 \begin_layout Standard
-模板使用LyX的优点是所见即所得，比较直观，缺点是TeX中一些复杂功能难以实现。另外LyX可以导出标准的TeX代码(参见第
+模板使用\SpecialChar LyX
+的优点是所见即所得，比较直观，缺点是\SpecialChar TeX
+中一些复杂功能难以实现。另外\SpecialChar LyX
+可以导出标准的\SpecialChar TeX
+代码(参见第
 \begin_inset space ~
 \end_inset
 
@@ -654,12 +686,15 @@ reference "sec:export"
 \begin_inset space ~
 \end_inset
 
-节)，方便转入TeX编辑器继续撰写。
+节)，方便转入\SpecialChar TeX
+编辑器继续撰写。
 \end_layout
 
 \begin_layout Standard
-青睐TeX模板的用户，直接编辑模板根目录下的Thesis.tex即可。注意它不是Thesis.lyx直接导出的，如果要使用此模板，不要让LyX导出TeX时覆盖此文件
-。
+青睐\SpecialChar TeX
+模板的用户，直接编辑模板根目录下的Thesis.tex即可。注意它不是Thesis.lyx直接导出的，如果要使用此模板，不要让\SpecialChar LyX
+导出\SpecialChar TeX
+时覆盖此文件。
 \end_layout
 
 \begin_layout Chapter
@@ -671,8 +706,10 @@ reference "sec:export"
 \family typewriter
 LZUthesis
 \family default
-宏包使用了宏包amsmath、amsthm、amsfonts、amssymb、bm、ctex和hyperref。目前大多数的TeX系统中都包含有这些宏包。但是中
-文字体在各个系统中却不尽相同：Windows下使用CTeX套装一般不需要额外配置字体，但Linux和Mac一般情况下需要设定中文字体，中文字体名称可通过命令
+宏包使用了宏包amsmath、amsthm、amsfonts、amssymb、bm、ctex和hyperref。目前大多数的\SpecialChar TeX
+系统中都包含有这些宏包。但是中文字体
+在各个系统中却不尽相同：Windows下使用C\SpecialChar TeX
+套装一般不需要额外配置字体，但Linux和Mac一般情况下需要设定中文字体，中文字体名称可通过命令
 \begin_inset space ~
 \end_inset
 
@@ -700,7 +737,8 @@ Windows配置
 \end_layout
 
 \begin_layout Itemize
-安装CTeX套装，最新的版本可以从
+安装C\SpecialChar TeX
+套装，最新的版本可以从
 \begin_inset ERT
 status open
 
@@ -717,11 +755,13 @@ href{http://www.ctex.org}{~www.ctex.org}
 \end_layout
 
 \begin_layout Itemize
-安装完成后，把所有宏包升级到最新(开始菜单--CTEX--Update(Admin))。
+安装完成后，把所有宏包升级到最新(开始菜单–CTEX–Update(Admin))。
 \end_layout
 
 \begin_layout Itemize
-安装LyX，最新的LyX安装包可以从
+安装\SpecialChar LyX
+，最新的\SpecialChar LyX
+安装包可以从
 \begin_inset ERT
 status open
 
@@ -747,6 +787,10 @@ Linux配置
 
 \begin_layout Itemize
 安装texlive以及texlive-lang-cjk。
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -762,6 +806,11 @@ width "86text%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -792,7 +841,12 @@ sudo apt-get install texlive-lang-cjk
 
 \end_deeper
 \begin_layout Itemize
-安装LyX。
+安装\SpecialChar LyX
+。
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -808,6 +862,11 @@ width "86text%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -834,15 +893,20 @@ sudo apt-get install lyx
 \end_deeper
 \begin_layout Itemize
 中文字体设置
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-文档类选项(文档--首选项--文档类)中添加选项[nofonts]
+文档类选项(文档–首选项–文档类)中添加选项[nofonts]
 \end_layout
 
 \begin_layout Enumerate
-导言区(文档--首选项--LaTeX导言区)中添加(Forked from
+导言区(文档–首选项–\SpecialChar LaTeX
+导言区)中添加(Forked from
 \begin_inset ERT
 status collapsed
 
@@ -857,6 +921,10 @@ href{https://bitbucket.org/kevinyounglzu/latextemplateoflzuthesis}{~Kevin
 \end_inset
 
 )
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -1056,7 +1124,8 @@ Mac配置
 \end_layout
 
 \begin_layout Itemize
-安装MacTeX，最新安装文件可以从
+安装Mac\SpecialChar TeX
+，最新安装文件可以从
 \begin_inset ERT
 status open
 
@@ -1073,7 +1142,9 @@ href{https://tug.org/mactex/}{~https://tug.org/mactex/}
 \end_layout
 
 \begin_layout Itemize
-安装LyX，最新的LyX安装包可以从
+安装\SpecialChar LyX
+，最新的\SpecialChar LyX
+安装包可以从
 \begin_inset ERT
 status open
 
@@ -1091,15 +1162,20 @@ href{http://www.lyx.org/Download}{~www.lyx.org/Download}
 
 \begin_layout Itemize
 中文字体设置
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-文档类选项(文档--首选项--文档类)中添加选项[nofonts]
+文档类选项(文档–首选项–文档类)中添加选项[nofonts]
 \end_layout
 
 \begin_layout Enumerate
-导言区(文档--首选项--LaTeX导言区)中添加(Forked from
+导言区(文档–首选项–\SpecialChar LaTeX
+导言区)中添加(Forked from
 \begin_inset ERT
 status collapsed
 
@@ -1114,6 +1190,10 @@ href{https://bitbucket.org/kevinyounglzu/latextemplateoflzuthesis}{~Kevin
 \end_inset
 
 )
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -1331,7 +1411,7 @@ name "sec:files"
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="14" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
@@ -1350,7 +1430,7 @@ LZUthesis.cls
 \begin_inset Text
 
 \begin_layout Plain Layout
----LZUthesis宏包
+—LZUthesis宏包
 \end_layout
 
 \end_inset
@@ -1392,7 +1472,7 @@ LZUthesis.cfg
 \begin_inset Text
 
 \begin_layout Plain Layout
----LZUthesis宏包配置文件
+—LZUthesis宏包配置文件
 \end_layout
 
 \end_inset
@@ -1434,7 +1514,8 @@ LZUthesis.layout
 \begin_inset Text
 
 \begin_layout Plain Layout
----LZUthesis的LyX布局文件
+—LZUthesis的\SpecialChar LyX
+布局文件
 \end_layout
 
 \end_inset
@@ -1476,7 +1557,7 @@ CASmthesis.cls
 \begin_inset Text
 
 \begin_layout Plain Layout
----CASthesis宏包
+—CASthesis宏包
 \end_layout
 
 \end_inset
@@ -1518,7 +1599,7 @@ CASmthesis.cfg
 \begin_inset Text
 
 \begin_layout Plain Layout
----CASthesis宏包配置文件
+—CASthesis宏包配置文件
 \end_layout
 
 \end_inset
@@ -1560,7 +1641,7 @@ lzubib.bst
 \begin_inset Text
 
 \begin_layout Plain Layout
----引文样式文件
+—引文样式文件
 \end_layout
 
 \end_inset
@@ -1602,7 +1683,7 @@ bib/thesis.bib
 \begin_inset Text
 
 \begin_layout Plain Layout
----bib数据库
+—bib数据库
 \end_layout
 
 \end_inset
@@ -1644,7 +1725,7 @@ figures/lzu.pdf
 \begin_inset Text
 
 \begin_layout Plain Layout
----兰州大学校名标准字
+—兰州大学校名标准字
 \end_layout
 
 \end_inset
@@ -1686,7 +1767,8 @@ Thesis.lyx
 \begin_inset Text
 
 \begin_layout Plain Layout
----LyX模板主文件
+—\SpecialChar LyX
+模板主文件
 \end_layout
 
 \end_inset
@@ -1726,7 +1808,8 @@ Envelope.lyx
 \begin_inset Text
 
 \begin_layout Plain Layout
----A3封面LyX模板
+—A3封面\SpecialChar LyX
+模板
 \end_layout
 
 \end_inset
@@ -1766,7 +1849,8 @@ spine.lyx
 \begin_inset Text
 
 \begin_layout Plain Layout
----书脊LyX模板
+—书脊\SpecialChar LyX
+模板
 \end_layout
 
 \end_inset
@@ -1806,7 +1890,8 @@ Thesis.tex
 \begin_inset Text
 
 \begin_layout Plain Layout
----TeX模板主文件
+—\SpecialChar TeX
+模板主文件
 \end_layout
 
 \end_inset
@@ -1846,7 +1931,7 @@ Makefile
 \begin_inset Text
 
 \begin_layout Plain Layout
----Makefile文件
+—Makefile文件
 \end_layout
 
 \end_inset
@@ -1884,7 +1969,7 @@ gbt7714-2005.bst
 \begin_inset Text
 
 \begin_layout Plain Layout
----符合国标gbt7714-2005的引文样式文件
+—符合国标gbt7714-2005的引文样式文件
 \end_layout
 
 \end_inset
@@ -1920,11 +2005,13 @@ gbt7714-2005.bst
 \color red
 *
 \color inherit
-表示LyX模板必须的文件，
+表示\SpecialChar LyX
+模板必须的文件，
 \color magenta
 $
 \color inherit
-表示LaTeX模板必须的文件。
+表示\SpecialChar LaTeX
+模板必须的文件。
 \end_layout
 
 \begin_layout Section
@@ -1932,11 +2019,15 @@ $
 \end_layout
 
 \begin_layout Enumerate
-模版默认使用的文档类选项(文档--首选项--文档类--自定义)是twoside,
+模版默认使用的文档类选项(文档–首选项–文档类–自定义)是twoside,
 \begin_inset space ~
 \end_inset
 
 longtitle，即双面，长标题。
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -1962,10 +2053,14 @@ bib数据库默认设置为模板根目录下的bib/thesis.bib。
 \end_layout
 
 \begin_layout Standard
-论文中最常使用的一些功能在本节中给出示例，其他LyX功能的使用详见帮助--用户手册，TeX使用则可参考The TeXbook
+论文中最常使用的一些功能在本节中给出示例，其他\SpecialChar LyX
+功能的使用详见帮助–用户手册，\SpecialChar TeX
+使用则可参考The \SpecialChar TeX
+book
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Knut04-T"
+literal "true"
 
 \end_inset
 
@@ -2010,7 +2105,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="5">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -2281,7 +2376,7 @@ name "fig:lzu"
 \end_layout
 
 \begin_layout Standard
-对所有需要引用的公式、表格、图形，执行插入--标签后，即可使用插入--交叉引用自动产生引用。
+对所有需要引用的公式、表格、图形，执行插入–标签后，即可使用插入–交叉引用自动产生引用。
 \end_layout
 
 \begin_layout Itemize
@@ -2334,7 +2429,7 @@ reference "fig:lzu"
 \end_layout
 
 \begin_layout Standard
-将引文的bib数据库(默认文件名为thesis.bib)放入模板根目录下的bib文件夹，即可通过插入--文献引用自动产生引文。
+将引文的bib数据库(默认文件名为thesis.bib)放入模板根目录下的bib文件夹，即可通过插入–文献引用自动产生引文。
 \end_layout
 
 \begin_layout Itemize
@@ -2342,6 +2437,7 @@ Journal：An article
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Liu13PRA-A"
+literal "true"
 
 \end_inset
 
@@ -2349,10 +2445,12 @@ key "Liu13PRA-A"
 \end_layout
 
 \begin_layout Itemize
-Book：CTeX FAQ
+Book：C\SpecialChar TeX
+ FAQ
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Wu05-C"
+literal "true"
 
 \end_inset
 
@@ -2382,7 +2480,8 @@ href{https://bitbucket.org/kevinyounglzu/latextemplateoflzuthesis}{~Kevin
 
 \end_inset
 
-)仅限LaTeX模板编译使用，适合Linux和Mac用户使用
+)仅限\SpecialChar LaTeX
+模板编译使用，适合Linux和Mac用户使用
 \end_layout
 
 \begin_layout Enumerate
@@ -2421,7 +2520,8 @@ reference "sec:files"
 \end_layout
 
 \begin_layout Enumerate
-请尽量升级TeX宏包到最新，一些旧包会使排版稍微不正常。截止到
+请尽量升级\SpecialChar TeX
+宏包到最新，一些旧包会使排版稍微不正常。截止到
 \begin_inset ERT
 status open
 
@@ -2442,15 +2542,21 @@ Bibkey中不能有中文字符。
 \end_layout
 
 \begin_layout Enumerate
-LyX中必须用空格时，尽量用~或(插入--格式--强制间距
+\SpecialChar LyX
+中必须用空格时，尽量用~或(插入–格式–强制间距
 \begin_inset space ~
 \end_inset
 
-)代替，不用空格的原因是：LyX不会中文断句，使用空格将使得LyX编辑界面混乱。
+)代替，不用空格的原因是：\SpecialChar LyX
+不会中文断句，使用空格将使得\SpecialChar LyX
+编辑界面混乱。
 \end_layout
 
 \begin_layout Enumerate
-Hyperref已经在模板中声明过，如果在LyX中执行插入--超链接会造成冲突(直接编辑TeX代码无此问题)，这时只能通过插入TeX代码的方式使用，比如：
+Hyperref已经在模板中声明过，如果在\SpecialChar LyX
+中执行插入–超链接会造成冲突(直接编辑\SpecialChar TeX
+代码无此问题)，这时只能通过插入\SpecialChar TeX
+代码的方式使用，比如：
 \begin_inset listings
 inline true
 status open
@@ -2468,14 +2574,16 @@ href{https://www.google.com}{Google}
 \end_layout
 
 \begin_layout Enumerate
-LyX中，enumerate环境结束后，必须先添加一个分割线环境才能换行，具体参见第
+\SpecialChar LyX
+中，enumerate环境结束后，必须先添加一个分割线环境才能换行，具体参见第
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:intro"
 
 \end_inset
 
-章中列表结束后的蓝色分割线(蓝色分割线仅现于LyX)。
+章中列表结束后的蓝色分割线(蓝色分割线仅现于\SpecialChar LyX
+)。
 \end_layout
 
 \begin_layout Section
@@ -2495,7 +2603,8 @@ reference "chap:intro"
 \end_layout
 
 \begin_layout Enumerate
-启用导言区(文档--首选项--LaTeX导言区)的
+启用导言区(文档–首选项–\SpecialChar LaTeX
+导言区)的
 \begin_inset space ~
 \end_inset
 
@@ -2518,6 +2627,10 @@ hypersetup{colorlinks=false}
 
 \begin_layout Enumerate
 预留左侧装订线：注释掉导言区中如下两行
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -2533,6 +2646,11 @@ width "86text%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -2581,7 +2699,8 @@ Envelope.lyx生成含书脊的封皮，纸张大小A3+。
 \end_layout
 
 \begin_layout Enumerate
-若中文标题中含有英文，需要将导言区(文档--首选项--LaTeX导言区)中的
+若中文标题中含有英文，需要将导言区(文档–首选项–\SpecialChar LaTeX
+导言区)中的
 \begin_inset listings
 inline true
 status open
@@ -2601,17 +2720,21 @@ status open
 
 \begin_layout Plain Layout
 
-
-\backslash
-footnotesize
 \end_layout
 
-\end_inset
+\begin_layout Plain Layout
 
 
-\begin_inset listings
-inline false
-status open
+\backslash
+small
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -2626,22 +2749,28 @@ raisebox{-5pt}{English}
 hspace{-0.1em}~某]
 \end_layout
 
-\end_inset
+\begin_layout Plain Layout
 
 
-\begin_inset ERT
-status open
+\backslash
+end{verbatim}
+\end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-normalsize 
+normalsize
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
 
-本文标题中的LaTeX即是如此处理，对于全中文标题的情况可做上面的相反替换。
+本文标题中的\SpecialChar LaTeX
+即是如此处理，对于全中文标题的情况可做上面的相反替换。
 \end_layout
 
 \begin_layout Chapter
@@ -2649,7 +2778,8 @@ normalsize
 \end_layout
 
 \begin_layout Section
-导出TeX
+导出\SpecialChar TeX
+
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:export"
@@ -2660,9 +2790,17 @@ name "sec:export"
 \end_layout
 
 \begin_layout Standard
-文件-导出-LaTeX(XeTeX)，可导出为tex文件进行进一步编辑，该tex文件的编译顺序为: XeLaTeX--BibTeX--XeLaTeX--XeLa
-TeX。注意LyX默认会自动将图片转换为pdf格式，造成一些图片有两个版本，不处理也不会有影响。若想处理，建议保留pdf版本的，因为XeLaTeX处理pdf图片
-时，编译速度快；若选择保留其他格式，应在tex文件正文前声明图片的后缀名，比如：
+文件-导出-\SpecialChar LaTeX
+(Xe\SpecialChar TeX
+)，可导出为tex文件进行进一步编辑，该tex文件的编译顺序为: Xe\SpecialChar LaTeX
+–Bib\SpecialChar TeX
+–Xe\SpecialChar LaTeX
+–XeLa\SpecialChar TeX
+。注意\SpecialChar LyX
+默认会自动将图片转换为pdf格式，造成一些
+图片有两个版本，不处理也不会有影响。若想处理，建议保留pdf版本的，因为Xe\SpecialChar LaTeX
+处理pdf图片时，编译速度快；若选择保留其他格式，应在tex文件正文前声明图片的后缀
+名，比如：
 \begin_inset listings
 inline true
 status open
@@ -2699,6 +2837,11 @@ width "86text%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -2746,7 +2889,8 @@ status open
 \end_layout
 
 \begin_layout Standard
-由于中文字体某些参数设置不当，LaTeX生成的pdf在Adobe阅读器下中文字体(特别是宋体与仿宋)会稍显模糊，可通过修改stemV值改善。
+由于中文字体某些参数设置不当，\SpecialChar LaTeX
+生成的pdf在Adobe阅读器下中文字体(特别是宋体与仿宋)会稍显模糊，可通过修改stemV值改善。
 \end_layout
 
 \begin_layout Enumerate
@@ -2773,6 +2917,10 @@ href{https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/}
 
 \begin_layout Enumerate
 cmd中切换到pdf所在目录，执行
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -2788,6 +2936,11 @@ width "86text%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -2818,6 +2971,10 @@ pdftk in.pdf output out.pdf uncompress
 
 \begin_layout Enumerate
 执行以下命令，得到final.pdf
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -2833,6 +2990,11 @@ width "86text%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -2862,11 +3024,16 @@ pdftk out.pdf output final.pdf compress
 \end_layout
 
 \begin_layout Enumerate
-此方法仅适用于LaTeX模板。
+此方法仅适用于\SpecialChar LaTeX
+模板。
 \end_layout
 
 \begin_layout Enumerate
 导言中添加：
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -2882,13 +3049,23 @@ width "86text%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,breaklines=true"
-inline false
+\begin_inset ERT
 status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -2921,6 +3098,13 @@ usepackage[nottoc]{tocbibind}
 newcites{phd}{在学期间的研究成果}
 \end_layout
 
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}
+\end_layout
+
 \end_inset
 
 
@@ -2934,6 +3118,10 @@ newcites{phd}{在学期间的研究成果}
 \end_deeper
 \begin_layout Enumerate
 在参考文献列表后添加
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -2949,13 +3137,23 @@ width "86text%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,breaklines=true"
-inline false
+\begin_inset ERT
 status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -2998,6 +3196,13 @@ bibliographystylephd{lzubib}
 bibliographyphd{bib/thesis}
 \end_layout
 
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}
+\end_layout
+
 \end_inset
 
 
@@ -3011,11 +3216,19 @@ bibliographyphd{bib/thesis}
 \end_deeper
 \begin_layout Enumerate
 此种情况使用makefile不能完整编译，但WinEdt可以完整编译。执行顺序为: 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-XeLaTeX--BibTeX--XeLaTeX--XeLaTeX。
+Xe\SpecialChar LaTeX
+–Bib\SpecialChar TeX
+–Xe\SpecialChar LaTeX
+–Xe\SpecialChar LaTeX
+。
 \end_layout
 
 \begin_layout Standard
@@ -3141,7 +3354,7 @@ Ajouter de la vie aux jours lorsqu'on ne peut plus ajouter de jours à la
 
 \begin_layout Thanks
 \align right
----Jean Bernard
+—Jean Bernard
 \end_layout
 
 \begin_layout Chapter

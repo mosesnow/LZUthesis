@@ -334,7 +334,7 @@ FUNCTION {format.editors}
 FUNCTION {format.title}
 { title empty$
     { "" }
-    { "{\it " title "t" change.case$ * "}" * }
+    { title emphasize } 
   if$
 }
 

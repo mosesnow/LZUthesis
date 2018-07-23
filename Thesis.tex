@@ -439,11 +439,13 @@ Makefile(Forked from\href{https://bitbucket.org/kevinyounglzu/latextemplateoflzu
 \begin{enumerate}
 \item spine.lyx生成竖排的书脊文字。
 \item Envelope.lyx生成含书脊的封皮，纸张大小A3+。
-\item 若中文标题中含有英文，需要将导言区(文档--首选项--\LaTeX{} 导言区)中的\lstinline!\shuji! 替换为如下样式：\footnotesize
-\begin{lstlisting}
+\item 若中文标题中含有英文，需要将导言区(文档--首选项--\LaTeX{} 导言区)中的\lstinline!\shuji! 替换为如下样式：
+\small
+\begin{verbatim}
 \shuji[某\hspace{0.3em}\raisebox{-5pt}{English}\hspace{-0.1em}~某]
-\end{lstlisting}
-\normalsize 本文标题中的\LaTeX{}即是如此处理，对于全中文标题的情况可做上面的相反替换。
+\end{verbatim}
+\normalsize
+本文标题中的\LaTeX{}即是如此处理，对于全中文标题的情况可做上面的相反替换。
 \end{enumerate}
 
 \chapter{进阶功能}
@@ -503,21 +505,20 @@ pdftk out.pdf output final.pdf compress
 
 
 \doublebox{\begin{minipage}[t]{0.86\textwidth}%
-\begin{lstlisting}[language=bash,breaklines=true]
+\begin{verbatim}
 %%自动生成发表文章目录
 \usepackage[resetlabels]{multibib}
 %把参考文献加入目录中，但排除目录本身
 \usepackage[nottoc]{tocbibind}
 \newcites{phd}{在学期间的研究成果}
-\end{lstlisting}
-%
+\end{verbatim}
 \end{minipage}}
 
 \item 在参考文献列表后添加
 
 
 \doublebox{\begin{minipage}[t]{0.86\textwidth}%
-\begin{lstlisting}[language=bash,breaklines=true]
+\begin{verbatim}
 %%自动生成发表文章目录
 %此处插入所有发表文章的bibkey
 \nocitephd{Liu13PRA-A}
@@ -525,8 +526,7 @@ pdftk out.pdf output final.pdf compress
 \bibliographystylephd{lzubib}
 %发表文章的bib库
 \bibliographyphd{bib/thesis}
-\end{lstlisting}
-%
+\end{verbatim}%
 \end{minipage}}
 
 \item 此种情况使用makefile不能完整编译，但WinEdt可以完整编译。执行顺序为:
