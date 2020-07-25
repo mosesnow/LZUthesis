@@ -128,8 +128,8 @@
 \fi
 \expandafter\CAST@getfileinfo\reserved@a\relax? ? \relax\relax
 \def\CAST@underline[#1]#2{%
-  \CTEXunderline{\hbox to #1{\hfill#2\hfill}}}
-\def\CASTunderline{\@ifnextchar[\CAST@underline\CTEXunderline}
+  \CJKunderline{\hbox to #1{\hfill#2\hfill}}}
+\def\CASTunderline{\@ifnextchar[\CAST@underline\CJKunderline}
 \newcommand\classification[1]{\def\CAST@value@classification{#1}}
 \newcommand\confidential[1]{\def\CAST@value@confidential{#1}}
 \newcommand\UDC[1]{\def\CAST@value@UDC{#1}}
