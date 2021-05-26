@@ -68,27 +68,27 @@
     \def\tabcolsep{1pt}
    \renewcommand{\arraystretch}{1.4}%改变表格的行间距
       \begin{tabular}{ll}
-      \LZU@label@titleCn &
+      \makebox[8em][s]{\LZU@label@titleCn}~~~&
        {\CASTunderline[297pt]{\bfseries \zihao{3}\CAST@value@title}}\\
-      \LZU@label@titleEn &
+      \makebox[8em][s]{\LZU@label@titleEn}~~~&
       {\CASTunderline[297pt]{\bfseries \zihao{3}\CAST@value@englishtitle}}\\
-      \LZU@label@author &
+      \makebox[8em][s]{\LZU@label@author}~~~&
       {\CASTunderline[297pt]{\CAST@value@author}}\\
-      \LZU@label@major &
-     {\CASTunderline[297pt]{\CAST@value@major}}\\
-      \LZU@label@direction&
-     {\CASTunderline[297pt]{\LZU@value@direction}} \\
-      \LZU@label@degree &
+      \makebox[8em][s]{\LZU@label@major}~~~&
+      {\CASTunderline[297pt]{\CAST@value@major}}\\
+      \makebox[8em][s]{\LZU@label@direction}~~~&
+      {\CASTunderline[297pt]{\LZU@value@direction}} \\
+      \makebox[8em][s]{\LZU@label@degree}~~~&
       {\CASTunderline[297pt]{\CAST@value@degree}} \\
-      \LZU@label@advisor &
+      \makebox[8em][s]{\LZU@label@advisor}~~~&
       {\CASTunderline[297pt]{\CAST@value@advisor}} \\
-      \LZU@label@datebeginAndEnd &
+      \makebox[8em][s]{\LZU@label@datebeginAndEnd}~~~&
       {\CASTunderline[297pt]{\LZU@value@\datebeginAndEnd}}\\
-       \LZU@label@submitdate &
+      \makebox[8em][s]{\LZU@label@submitdate}~~~&
       {\CASTunderline[297pt]{\CAST@value@submitdate}}\\
-      \LZU@label@defenddate &
+      \makebox[8em][s]{\LZU@label@defenddate}~~~&
       {\CASTunderline[297pt]{\CAST@value@defenddate}}\\
-      \LZU@label@degreedate &
+      \makebox[8em][s]{\LZU@label@degreedate}~~~&
       {\CASTunderline[297pt]{\CAST@value@degreedate}}
     \end{tabular}
 
@@ -138,30 +138,31 @@
 %    \def\arraystretch{1.8}
     \renewcommand\arraystretch{1.25}
     \begin{tabular}{llcrl}
-      \LZU@label@titleCn &
+      \makebox[8em][s]{\LZU@label@titleCn}~~~&
       \multicolumn{4}{l} {\CASTunderline[297pt]{\bfseries \zihao{3}\CAST@value@title}}\\
        &
       \multicolumn{4}{l} {\CASTunderline[297pt]{\bfseries \hspace{0.3pt} \zihao{3}\LZU@value@titleadd}}\\
-      \LZU@label@titleEn &
+      \makebox[8em][s]{\LZU@label@titleEn}~~~&
       \multicolumn{4}{l} {\CASTunderline[297pt]{\bfseries \zihao{3}\CAST@value@englishtitle}}\\
        &
       \multicolumn{4}{l} {\CASTunderline[297pt]{\bfseries \zihao{3}\LZU@value@englishtitleadd}}\\
-      \LZU@label@author &
+      \makebox[8em][s]{\LZU@label@author}~~~&
       \multicolumn{4}{l}{\CASTunderline[297pt]{\CAST@value@author}}\\
-      \LZU@label@major &
+      \makebox[8em][s]{\LZU@label@major}~~~&
       \multicolumn{4}{l}{\CASTunderline[297pt]{\CAST@value@major}}\\
-      \LZU@label@direction&
+      \makebox[8em][s]{\LZU@label@direction}~~~&
       \multicolumn{4}{l}{\CASTunderline[297pt]{\LZU@value@direction}} \\
-      \LZU@label@degree &
+      \makebox[8em][s]{\LZU@label@degree}~~~&
       \multicolumn{4}{l}{\CASTunderline[297pt]{\CAST@value@degree}} \\
-      \LZU@label@advisor &
+      \makebox[8em][s]{\LZU@label@advisor}~~~&
       \multicolumn{4}{l}{\CASTunderline[297pt]{\CAST@value@advisor}} \\
-      \LZU@label@datebeginAndEnd &\multicolumn{4}{l}{\CASTunderline[297pt]{\LZU@value@\datebeginAndEnd}}\\
-       \LZU@label@submitdate &
+      \makebox[8em][s]{\LZU@label@datebeginAndEnd}~~~&
+      \multicolumn{4}{l}{\CASTunderline[297pt]{\LZU@value@\datebeginAndEnd}}\\
+      \makebox[8em][s]{\LZU@label@submitdate}~~~&
       \multicolumn{4}{l}{\CASTunderline[297pt]{\CAST@value@submitdate}}\\
-      \LZU@label@defenddate &
+      \makebox[8em][s]{\LZU@label@defenddate}~~~&
       \multicolumn{4}{l}{\CASTunderline[297pt]{\CAST@value@defenddate}}\\
-      \LZU@label@degreedate &
+      \makebox[8em][s]{\LZU@label@degreedate}~~~&
       \multicolumn{4}{l}{\CASTunderline[297pt]{\CAST@value@degreedate}}
 
     \end{tabular}
@@ -338,7 +339,7 @@ status open
 \end_layout
 
 \begin_layout Author
-XXX
+刘某某
 \begin_inset Note Note
 status open
 
