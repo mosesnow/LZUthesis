@@ -2,21 +2,22 @@ SOURCE=$(wildcard *.tex)
 TARGET=$(patsubst %.tex,%.pdf,$(SOURCE))
 BBL=$(patsubst %.tex,%.bbl,$(SOURCE))
 AUX=$(patsubst %.tex,%.aux,$(SOURCE))
+BIBNOTE=$(patsubst %.tex,%Notes.bib,$(SOURCE))
 
+.PHONY : all
 all: $(TARGET)
 
-$(TARGET) : $(SOURCE)
-	xelatex $<
+$(TARGET): %.pdf: %.tex %.bbl
+	xelatex --synctex=-1 $<
+	xelatex --synctex=-1 $<
 
-ref: $(SOURCE) $(BBL)
-	xelatex $<
-	xelatex $<
+$(BBL) : %.bbl: %.aux
+	bibtex $^
 
-$(BBL) : $(AUX)
-	bibtex $<
+$(AUX) : %.aux: %.tex
+	xelatex --synctex=-1 $^
 
-$(AUX) : $(SOURCE)
-	xelatex $<
-
+.PHONY : clean
 clean:
-	rm -f *.aux chapter/*.aux *.log *.blg *.bbl *.toc *.out
+	@rm -f *.aux *.log *.blg *.bbl *.toc *.out $(BIBNOTE) *.synctex *.lyx~ *.synctex.gz *.synctex\(busy\) *.lot *.lof $(TARGET)
+
